@@ -28,7 +28,7 @@ namespace MissBelatrix.Telas
             bll.Inserir(info);
         }
 
-        private void btCadastrar_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
             CadastraNovoTipoAcesso();
         }

@@ -16,3 +16,11 @@ D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.pdb
 D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaClientes.resources
 D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroTipoAcesso.resources
 D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaTipoAcesso.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroProduto.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaCores.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaProdutos.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaTamanho.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaTipoProduto.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroCor.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroTamanho.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroTipoProduto.resources

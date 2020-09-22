@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MissBelatrix.Camadas.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,14 +25,25 @@ namespace MissBelatrix.Telas
 
         private void CarregaListaCores()
         {
-            //ClienteBLL bll = new ClienteBLL();
-            //grvListaCores.DataSource = bll.Listar();
+            CorBLL bll = new CorBLL();
+            grvListaCores.DataSource = bll.Listar();
         }
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            //CadastroCliente cadastroCliente = new CadastroCliente();
-            //cadastroCliente.Show();
+            CadastroCor cadastroCor = new CadastroCor();
+            cadastroCor.Show();
+        }
+
+        private void btEditar_Click(object sender, EventArgs e)
+        {
+            EditarCor();
+        }
+
+        private void EditarCor()
+        {
+            //CadastroCor cadastroCor = new CadastroCor();
+            //cadastroCor.Show();
         }
     }
 }

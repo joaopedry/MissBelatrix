@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MissBelatrix.Camadas.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,14 +25,14 @@ namespace MissBelatrix.Telas
 
         private void CarregaListaTamanhos()
         {
-            //ClienteBLL bll = new ClienteBLL();
-            //grvListaTamanhos.DataSource = bll.Listar();
+            TamanhoBLL bll = new TamanhoBLL();
+            grvListaTamanhos.DataSource = bll.Listar();
         }
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            //CadastroCliente cadastroCliente = new CadastroCliente();
-            //cadastroCliente.Show();
+            CadastroTamanho cadastroTamanho = new CadastroTamanho();
+            cadastroTamanho.Show();
         }
     }
 }

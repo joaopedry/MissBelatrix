@@ -1,6 +1,6 @@
 ﻿namespace MissBelatrix.Telas
 {
-    partial class CadastroTipoAcesso
+    partial class CadastroCor
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.lbDsTipoAcesso = new System.Windows.Forms.Label();
-            this.txtDsTipoAcesso = new System.Windows.Forms.TextBox();
+            this.lbDsCor = new System.Windows.Forms.Label();
+            this.txtDsCor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCadastrar
@@ -44,34 +44,34 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // lbDsTipoAcesso
+            // lbDsCor
             // 
-            this.lbDsTipoAcesso.AutoSize = true;
-            this.lbDsTipoAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsTipoAcesso.Location = new System.Drawing.Point(9, 17);
-            this.lbDsTipoAcesso.Name = "lbDsTipoAcesso";
-            this.lbDsTipoAcesso.Size = new System.Drawing.Size(115, 18);
-            this.lbDsTipoAcesso.TabIndex = 31;
-            this.lbDsTipoAcesso.Text = "Tipo de Acesso:";
+            this.lbDsCor.AutoSize = true;
+            this.lbDsCor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDsCor.Location = new System.Drawing.Point(9, 17);
+            this.lbDsCor.Name = "lbDsCor";
+            this.lbDsCor.Size = new System.Drawing.Size(37, 18);
+            this.lbDsCor.TabIndex = 31;
+            this.lbDsCor.Text = "Cor:";
             // 
-            // txtDsTipoAcesso
+            // txtDsCor
             // 
-            this.txtDsTipoAcesso.Location = new System.Drawing.Point(12, 38);
-            this.txtDsTipoAcesso.Multiline = true;
-            this.txtDsTipoAcesso.Name = "txtDsTipoAcesso";
-            this.txtDsTipoAcesso.Size = new System.Drawing.Size(288, 25);
-            this.txtDsTipoAcesso.TabIndex = 30;
+            this.txtDsCor.Location = new System.Drawing.Point(12, 38);
+            this.txtDsCor.Multiline = true;
+            this.txtDsCor.Name = "txtDsCor";
+            this.txtDsCor.Size = new System.Drawing.Size(288, 25);
+            this.txtDsCor.TabIndex = 30;
             // 
-            // CadastroTipoAcesso
+            // CadastroCor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 122);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.lbDsTipoAcesso);
-            this.Controls.Add(this.txtDsTipoAcesso);
-            this.Name = "CadastroTipoAcesso";
-            this.Text = "CadastroTipoAcesso";
+            this.Controls.Add(this.lbDsCor);
+            this.Controls.Add(this.txtDsCor);
+            this.Name = "CadastroCor";
+            this.Text = "CadastroCor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,7 +80,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Label lbDsTipoAcesso;
-        private System.Windows.Forms.TextBox txtDsTipoAcesso;
+        private System.Windows.Forms.Label lbDsCor;
+        private System.Windows.Forms.TextBox txtDsCor;
     }
 }

@@ -163,6 +163,7 @@
             this.Controls.Add(this.txtDsProduto);
             this.Name = "CadastroProduto";
             this.Text = "CadastroProduto";
+            this.Load += new System.EventHandler(this.CadastroProduto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

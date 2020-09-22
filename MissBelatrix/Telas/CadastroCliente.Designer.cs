@@ -39,7 +39,6 @@
             this.txtDsFone = new System.Windows.Forms.TextBox();
             this.lbCdTipoAcesso = new System.Windows.Forms.Label();
             this.rbIdGeneroFeninimo = new System.Windows.Forms.RadioButton();
-            this.btnAdicionaTipoAcesso = new System.Windows.Forms.Button();
             this.grbGenero = new System.Windows.Forms.GroupBox();
             this.grbGenero.SuspendLayout();
             this.SuspendLayout();
@@ -88,9 +87,9 @@
             // 
             this.cbCdTipoAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F);
             this.cbCdTipoAcesso.FormattingEnabled = true;
-            this.cbCdTipoAcesso.Location = new System.Drawing.Point(243, 163);
+            this.cbCdTipoAcesso.Location = new System.Drawing.Point(258, 163);
             this.cbCdTipoAcesso.Name = "cbCdTipoAcesso";
-            this.cbCdTipoAcesso.Size = new System.Drawing.Size(169, 25);
+            this.cbCdTipoAcesso.Size = new System.Drawing.Size(192, 25);
             this.cbCdTipoAcesso.TabIndex = 4;
             // 
             // lbDsEmail
@@ -126,14 +125,14 @@
             this.txtDsFone.Location = new System.Drawing.Point(30, 163);
             this.txtDsFone.Multiline = true;
             this.txtDsFone.Name = "txtDsFone";
-            this.txtDsFone.Size = new System.Drawing.Size(178, 25);
+            this.txtDsFone.Size = new System.Drawing.Size(192, 25);
             this.txtDsFone.TabIndex = 7;
             // 
             // lbCdTipoAcesso
             // 
             this.lbCdTipoAcesso.AutoSize = true;
             this.lbCdTipoAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.lbCdTipoAcesso.Location = new System.Drawing.Point(240, 142);
+            this.lbCdTipoAcesso.Location = new System.Drawing.Point(255, 142);
             this.lbCdTipoAcesso.Name = "lbCdTipoAcesso";
             this.lbCdTipoAcesso.Size = new System.Drawing.Size(115, 18);
             this.lbCdTipoAcesso.TabIndex = 9;
@@ -151,17 +150,6 @@
             this.rbIdGeneroFeninimo.TabStop = true;
             this.rbIdGeneroFeninimo.Text = "Feminino";
             this.rbIdGeneroFeninimo.UseVisualStyleBackColor = true;
-            // 
-            // btnAdicionaTipoAcesso
-            // 
-            this.btnAdicionaTipoAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdicionaTipoAcesso.Location = new System.Drawing.Point(418, 163);
-            this.btnAdicionaTipoAcesso.Name = "btnAdicionaTipoAcesso";
-            this.btnAdicionaTipoAcesso.Size = new System.Drawing.Size(30, 25);
-            this.btnAdicionaTipoAcesso.TabIndex = 12;
-            this.btnAdicionaTipoAcesso.Text = "+";
-            this.btnAdicionaTipoAcesso.UseVisualStyleBackColor = true;
-            this.btnAdicionaTipoAcesso.Click += new System.EventHandler(this.btnAdicionaTipoAcesso_Click);
             // 
             // grbGenero
             // 
@@ -181,7 +169,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 344);
             this.Controls.Add(this.grbGenero);
-            this.Controls.Add(this.btnAdicionaTipoAcesso);
             this.Controls.Add(this.lbCdTipoAcesso);
             this.Controls.Add(this.lbDsFone);
             this.Controls.Add(this.txtDsFone);
@@ -214,7 +201,6 @@
         private System.Windows.Forms.TextBox txtDsFone;
         private System.Windows.Forms.Label lbCdTipoAcesso;
         private System.Windows.Forms.RadioButton rbIdGeneroFeninimo;
-        private System.Windows.Forms.Button btnAdicionaTipoAcesso;
         private System.Windows.Forms.GroupBox grbGenero;
     }
 }

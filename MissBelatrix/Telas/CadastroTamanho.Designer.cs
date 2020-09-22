@@ -1,6 +1,6 @@
 ﻿namespace MissBelatrix.Telas
 {
-    partial class CadastroTipoAcesso
+    partial class CadastroTamanho
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.lbDsTipoAcesso = new System.Windows.Forms.Label();
-            this.txtDsTipoAcesso = new System.Windows.Forms.TextBox();
+            this.lbDsTamanho = new System.Windows.Forms.Label();
+            this.txtDsTamanho = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCadastrar
@@ -39,48 +39,47 @@
             this.btnCadastrar.Location = new System.Drawing.Point(213, 80);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(87, 30);
-            this.btnCadastrar.TabIndex = 32;
+            this.btnCadastrar.TabIndex = 29;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // lbDsTipoAcesso
+            // lbDsTamanho
             // 
-            this.lbDsTipoAcesso.AutoSize = true;
-            this.lbDsTipoAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsTipoAcesso.Location = new System.Drawing.Point(9, 17);
-            this.lbDsTipoAcesso.Name = "lbDsTipoAcesso";
-            this.lbDsTipoAcesso.Size = new System.Drawing.Size(115, 18);
-            this.lbDsTipoAcesso.TabIndex = 31;
-            this.lbDsTipoAcesso.Text = "Tipo de Acesso:";
+            this.lbDsTamanho.AutoSize = true;
+            this.lbDsTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDsTamanho.Location = new System.Drawing.Point(9, 17);
+            this.lbDsTamanho.Name = "lbDsTamanho";
+            this.lbDsTamanho.Size = new System.Drawing.Size(75, 18);
+            this.lbDsTamanho.TabIndex = 28;
+            this.lbDsTamanho.Text = "Tamanho:";
             // 
-            // txtDsTipoAcesso
+            // txtDsTamanho
             // 
-            this.txtDsTipoAcesso.Location = new System.Drawing.Point(12, 38);
-            this.txtDsTipoAcesso.Multiline = true;
-            this.txtDsTipoAcesso.Name = "txtDsTipoAcesso";
-            this.txtDsTipoAcesso.Size = new System.Drawing.Size(288, 25);
-            this.txtDsTipoAcesso.TabIndex = 30;
+            this.txtDsTamanho.Location = new System.Drawing.Point(12, 38);
+            this.txtDsTamanho.Multiline = true;
+            this.txtDsTamanho.Name = "txtDsTamanho";
+            this.txtDsTamanho.Size = new System.Drawing.Size(288, 25);
+            this.txtDsTamanho.TabIndex = 27;
             // 
-            // CadastroTipoAcesso
+            // CadastroTamanho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(317, 122);
             this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.lbDsTipoAcesso);
-            this.Controls.Add(this.txtDsTipoAcesso);
-            this.Name = "CadastroTipoAcesso";
-            this.Text = "CadastroTipoAcesso";
+            this.Controls.Add(this.lbDsTamanho);
+            this.Controls.Add(this.txtDsTamanho);
+            this.Name = "CadastroTamanho";
+            this.Text = "CadastroTamanho";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Label lbDsTipoAcesso;
-        private System.Windows.Forms.TextBox txtDsTipoAcesso;
+        private System.Windows.Forms.Label lbDsTamanho;
+        private System.Windows.Forms.TextBox txtDsTamanho;
     }
 }

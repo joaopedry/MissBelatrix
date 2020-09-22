@@ -23,10 +23,39 @@ namespace MissBelatrix.Telas
             listaClientes.Show();
         }
 
-        private void menuCadastrarCliente_Click(object sender, EventArgs e)
+        private void menuProdutos_Click(object sender, EventArgs e)
         {
-            CadastroCliente cadastroCliente = new CadastroCliente();
-            cadastroCliente.Show();
+            ListaProdutos listaProdutos = new ListaProdutos();
+            listaProdutos.Show();
+        }
+
+        private void menuTipoAcessos_Click(object sender, EventArgs e)
+        {
+            ListaTipoAcesso listaTipoAcesso = new ListaTipoAcesso();
+            listaTipoAcesso.Show();
+        }
+
+        private void menuTipoProdutos_Click(object sender, EventArgs e)
+        {
+            ListaTipoProduto listaTipoProduto = new ListaTipoProduto();
+            listaTipoProduto.Show();
+        }
+
+        private void menuTamanhos_Click(object sender, EventArgs e)
+        {
+            ListaTamanho listaTamanho = new ListaTamanho();
+            listaTamanho.Show();
+        }
+
+        private void menuCores_Click(object sender, EventArgs e)
+        {
+            ListaCores listaCores = new ListaCores();
+            listaCores.Show();
+        }
+
+        private void menuSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -81,17 +81,35 @@
     <Compile Include="Telas\CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CadastroCor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroCor.Designer.cs">
+      <DependentUpon>CadastroCor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadastroProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\CadastroProduto.Designer.cs">
       <DependentUpon>CadastroProduto.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\CadastroTamanho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroTamanho.Designer.cs">
+      <DependentUpon>CadastroTamanho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\CadastroTipoAcesso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\CadastroTipoAcesso.Designer.cs">
       <DependentUpon>CadastroTipoAcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CadastroTipoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CadastroTipoProduto.Designer.cs">
+      <DependentUpon>CadastroTipoProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\ListaClientes.cs">
       <SubType>Form</SubType>
@@ -153,11 +171,20 @@
     <EmbeddedResource Include="Telas\CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroCor.resx">
+      <DependentUpon>CadastroCor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastroProduto.resx">
       <DependentUpon>CadastroProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroTamanho.resx">
+      <DependentUpon>CadastroTamanho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastroTipoAcesso.resx">
       <DependentUpon>CadastroTipoAcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CadastroTipoProduto.resx">
+      <DependentUpon>CadastroTipoProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\ListaClientes.resx">
       <DependentUpon>ListaClientes.cs</DependentUpon>

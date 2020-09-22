@@ -41,7 +41,7 @@ namespace MissBelatrix.Telas
             info.DsEmail = txtDsEmail.Text;
             info.DsFone = txtDsFone.Text;
             info.IdGenero = (rbIdGeneroFeninimo.Checked == true) ? 0 : 1;
-            info.CdTipoAcesso = cbCdTipoAcesso.SelectedIndex;
+            info.CdTipoAcesso = ((TipoAcessoInfo)cbCdTipoAcesso.SelectedItem).CdTipoAcesso;
 
             bll.Inserir(info);
         }
@@ -49,11 +49,9 @@ namespace MissBelatrix.Telas
         private void CarregaTiposAcesso()
         {
             TipoAcessoBLL bll = new TipoAcessoBLL();
-
-            foreach (TipoAcessoInfo tipoAcesso in bll.Listar())
-            {
-                cbCdTipoAcesso.Items.Add(tipoAcesso);
-            }
+            cbCdTipoAcesso.DataSource = bll.Listar();
+            cbCdTipoAcesso.DisplayMember = "DsTipoAcesso";
+            cbCdTipoAcesso.ValueMember = "CdTipoAcesso";
         }
 
         private void btnAdicionaTipoAcesso_Click(object sender, EventArgs e)
