@@ -34,5 +34,13 @@ namespace MissBelatrix.Telas
             CadastroTamanho cadastroTamanho = new CadastroTamanho();
             cadastroTamanho.Show();
         }
+
+        private void grvListaTamanhos_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            grvListaTamanhos.Rows[e.RowIndex].Cells[0].Value = true;
+            
+
+            grvListaTamanhos.RefreshEdit();
+        }
     }
 }

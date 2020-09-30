@@ -16,10 +16,28 @@ namespace MissBelatrix.Camadas.BLL
             return dal.Listar();
         }
 
-        public void Inserir(TipoAcessoInfo info)
+        public TipoAcessoInfo Get(int pCdTipoAcesso)
         {
             TipoAcessoDAL dal = new TipoAcessoDAL();
-            dal.Inserir(info);
+            return dal.Get(pCdTipoAcesso);
+        }
+
+        public void Inserir(TipoAcessoInfo pInfo)
+        {
+            TipoAcessoDAL dal = new TipoAcessoDAL();
+            dal.Inserir(pInfo);
+        }
+
+        public void Update(TipoAcessoInfo pInfo)
+        {
+            TipoAcessoDAL dal = new TipoAcessoDAL();
+            dal.Update(pInfo);
+        }
+
+        public void Delete(int pCdTipoAcesso)
+        {
+            TipoAcessoDAL dal = new TipoAcessoDAL();
+            dal.Delete(pCdTipoAcesso);
         }
     }
 }

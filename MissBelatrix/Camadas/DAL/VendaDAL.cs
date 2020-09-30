@@ -26,13 +26,52 @@ namespace MissBelatrix.Camadas.DAL
             { throw ex; }
         }
 
-        public void Inserir(VendaInfo info)
+        public void Inserir(VendaInfo pInfo)
         {
             try
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    db.GetCollection<VendaInfo>().Insert(info);
+                    db.GetCollection<VendaInfo>().Insert(pInfo);
+                }
+            }
+            catch (Exception ex)
+            { throw ex; }
+        }
+
+        public VendaInfo Get(int pCdVenda)
+        {
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
+                {
+                    return db.GetCollection<VendaInfo>().FindById(pCdVenda);
+                }
+            }
+            catch (Exception ex)
+            { throw ex; }
+        }
+
+        public void Update(VendaInfo pInfo)
+        {
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
+                {
+                    db.GetCollection<VendaInfo>().Update(pInfo);
+                }
+            }
+            catch (Exception ex)
+            { throw ex; }
+        }
+
+        public void Delete(int pCdVenda)
+        {
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
+                {
+                    db.GetCollection<VendaInfo>().Delete(pCdVenda);
                 }
             }
             catch (Exception ex)

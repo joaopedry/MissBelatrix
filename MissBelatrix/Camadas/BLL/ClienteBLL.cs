@@ -16,10 +16,28 @@ namespace MissBelatrix.Camadas.BLL
             return dal.Listar();
         }
 
-        public void Inserir(ClienteInfo info)
+        public ClienteInfo Get(int pCdCliente)
         {
             ClienteDAL dal = new ClienteDAL();
-            dal.Inserir(info);
+            return dal.Get(pCdCliente);
+        }
+
+        public void Inserir(ClienteInfo pInfo)
+        {
+            ClienteDAL dal = new ClienteDAL();
+            dal.Inserir(pInfo);
+        }
+
+        public void Update(ClienteInfo pInfo)
+        {
+            ClienteDAL dal = new ClienteDAL();
+            dal.Update(pInfo);
+        }
+
+        public void Delete(int pCdCliente)
+        {
+            ClienteDAL dal = new ClienteDAL();
+            dal.Delete(pCdCliente);
         }
     }
 }

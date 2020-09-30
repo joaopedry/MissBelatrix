@@ -18,47 +18,59 @@ namespace MissBelatrix.Camadas.DAL
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    List<CorInfo> info = db.GetCollection<CorInfo>().FindAll().ToList();
-                    return info;
+                    return db.GetCollection<CorInfo>().FindAll().ToList();
                 }
             }
             catch (Exception ex)
             { throw ex; }
         }
 
-        public void Inserir(CorInfo info)
+        public void Inserir(CorInfo pInfo)
         {
             try
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    db.GetCollection<CorInfo>().Insert(info);
+                    db.GetCollection<CorInfo>().Insert(pInfo);
                 }
             }
             catch (Exception ex)
             { throw ex; }
         }
 
-        public void Update(CorInfo info)
+        public CorInfo Get(int pCdCor)
         {
             try
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    db.GetCollection<CorInfo>().Update(info);
+                    return db.GetCollection<CorInfo>().FindById(pCdCor);
                 }
             }
             catch (Exception ex)
             { throw ex; }
         }
 
-        public int GetCdCor(string DsCor)
+        public void Update(CorInfo pInfo)
         {
             try
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    return Listar().Find(x => x.DsCor == DsCor).CdCor;
+                    db.GetCollection<CorInfo>().Update(pInfo);
+                }
+            }
+            catch (Exception ex)
+            { throw ex; }
+        }
+
+        public void Delete(int pCdCor)
+        {
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
+                {
+                    db.GetCollection<CorInfo>().Delete(pCdCor);
                 }
             }
             catch (Exception ex)

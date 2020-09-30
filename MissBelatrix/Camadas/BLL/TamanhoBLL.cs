@@ -16,10 +16,28 @@ namespace MissBelatrix.Camadas.BLL
             return dal.Listar();
         }
 
-        public void Inserir(TamanhoInfo info)
+        public TamanhoInfo Get(int pCdTamanho)
         {
             TamanhoDAL dal = new TamanhoDAL();
-            dal.Inserir(info);
+            return dal.Get(pCdTamanho);
+        }
+
+        public void Inserir(TamanhoInfo pInfo)
+        {
+            TamanhoDAL dal = new TamanhoDAL();
+            dal.Inserir(pInfo);
+        }
+
+        public void Update(TamanhoInfo pInfo)
+        {
+            TamanhoDAL dal = new TamanhoDAL();
+            dal.Update(pInfo);
+        }
+
+        public void Delete(int pCdTamanho)
+        {
+            TamanhoDAL dal = new TamanhoDAL();
+            dal.Delete(pCdTamanho);
         }
     }
 }

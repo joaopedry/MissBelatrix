@@ -23,7 +23,7 @@ namespace MissBelatrix.Telas
             CarregaListaCores();
         }
 
-        private void CarregaListaCores()
+        public void CarregaListaCores()
         {
             CorBLL bll = new CorBLL();
             grvListaCores.DataSource = bll.Listar();
@@ -31,7 +31,7 @@ namespace MissBelatrix.Telas
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            CadastroCor cadastroCor = new CadastroCor();
+            CadastroCor cadastroCor = new CadastroCor(this);
             cadastroCor.Show();
         }
 
@@ -42,8 +42,33 @@ namespace MissBelatrix.Telas
 
         private void EditarCor()
         {
-            //CadastroCor cadastroCor = new CadastroCor();
-            //cadastroCor.Show();
+            CadastroCor cadastroCor = new CadastroCor(Convert.ToInt32(grvListaCores.CurrentRow.Cells[1].Value), this);
+            cadastroCor.Show();
+        }
+
+        private void grvListaCores_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                foreach (DataGridViewRow row in grvListaCores.Rows)
+                {
+                    if (row.Index == e.RowIndex)
+                    {
+                        row.Cells[0].Value = true;
+                    }
+                    else
+                    {
+                        row.Cells[0].Value = false;
+                    }
+                }
+            }
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            CorBLL bll = new CorBLL();
+            bll.Delete(Convert.ToInt32(grvListaCores.CurrentRow.Cells[1].Value));
+            CarregaListaCores();
         }
     }
 }

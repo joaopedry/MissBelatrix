@@ -38,8 +38,10 @@
             this.lbDsFone = new System.Windows.Forms.Label();
             this.txtDsFone = new System.Windows.Forms.TextBox();
             this.lbCdTipoAcesso = new System.Windows.Forms.Label();
-            this.rbIdGeneroFeninimo = new System.Windows.Forms.RadioButton();
+            this.rbIdGeneroFeminimo = new System.Windows.Forms.RadioButton();
             this.grbGenero = new System.Windows.Forms.GroupBox();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.grbGenero.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,13 +65,15 @@
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.Enabled = false;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(361, 303);
+            this.btnCadastrar.Location = new System.Drawing.Point(268, 302);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(87, 30);
             this.btnCadastrar.TabIndex = 2;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Visible = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // rbIdGeneroMasculino
@@ -138,22 +142,22 @@
             this.lbCdTipoAcesso.TabIndex = 9;
             this.lbCdTipoAcesso.Text = "Tipo de Acesso:";
             // 
-            // rbIdGeneroFeninimo
+            // rbIdGeneroFeminimo
             // 
-            this.rbIdGeneroFeninimo.AutoSize = true;
-            this.rbIdGeneroFeninimo.Checked = true;
-            this.rbIdGeneroFeninimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.rbIdGeneroFeninimo.Location = new System.Drawing.Point(6, 19);
-            this.rbIdGeneroFeninimo.Name = "rbIdGeneroFeninimo";
-            this.rbIdGeneroFeninimo.Size = new System.Drawing.Size(87, 22);
-            this.rbIdGeneroFeninimo.TabIndex = 10;
-            this.rbIdGeneroFeninimo.TabStop = true;
-            this.rbIdGeneroFeninimo.Text = "Feminino";
-            this.rbIdGeneroFeninimo.UseVisualStyleBackColor = true;
+            this.rbIdGeneroFeminimo.AutoSize = true;
+            this.rbIdGeneroFeminimo.Checked = true;
+            this.rbIdGeneroFeminimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.rbIdGeneroFeminimo.Location = new System.Drawing.Point(6, 19);
+            this.rbIdGeneroFeminimo.Name = "rbIdGeneroFeminimo";
+            this.rbIdGeneroFeminimo.Size = new System.Drawing.Size(87, 22);
+            this.rbIdGeneroFeminimo.TabIndex = 10;
+            this.rbIdGeneroFeminimo.TabStop = true;
+            this.rbIdGeneroFeminimo.Text = "Feminino";
+            this.rbIdGeneroFeminimo.UseVisualStyleBackColor = true;
             // 
             // grbGenero
             // 
-            this.grbGenero.Controls.Add(this.rbIdGeneroFeninimo);
+            this.grbGenero.Controls.Add(this.rbIdGeneroFeminimo);
             this.grbGenero.Controls.Add(this.rbIdGeneroMasculino);
             this.grbGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbGenero.Location = new System.Drawing.Point(30, 207);
@@ -163,11 +167,37 @@
             this.grbGenero.TabStop = false;
             this.grbGenero.Text = "Gênero:";
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Enabled = false;
+            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.Location = new System.Drawing.Point(268, 302);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(87, 30);
+            this.btnAtualizar.TabIndex = 14;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Visible = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btAtualizar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(363, 302);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(87, 30);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // CadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 344);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.grbGenero);
             this.Controls.Add(this.lbCdTipoAcesso);
             this.Controls.Add(this.lbDsFone);
@@ -180,7 +210,6 @@
             this.Controls.Add(this.txtDsCliente);
             this.Name = "CadastroCliente";
             this.Text = "CadastroCliente";
-            this.Load += new System.EventHandler(this.CadastroCliente_Load);
             this.grbGenero.ResumeLayout(false);
             this.grbGenero.PerformLayout();
             this.ResumeLayout(false);
@@ -200,7 +229,9 @@
         private System.Windows.Forms.Label lbDsFone;
         private System.Windows.Forms.TextBox txtDsFone;
         private System.Windows.Forms.Label lbCdTipoAcesso;
-        private System.Windows.Forms.RadioButton rbIdGeneroFeninimo;
+        private System.Windows.Forms.RadioButton rbIdGeneroFeminimo;
         private System.Windows.Forms.GroupBox grbGenero;
+        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

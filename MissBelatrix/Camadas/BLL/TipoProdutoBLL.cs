@@ -16,10 +16,28 @@ namespace MissBelatrix.Camadas.BLL
             return dal.Listar();
         }
 
-        public void Inserir(TipoProdutoInfo info)
+        public TipoProdutoInfo Get(int pCdTipoProduto)
         {
             TipoProdutoDAL dal = new TipoProdutoDAL();
-            dal.Inserir(info);
+            return dal.Get(pCdTipoProduto);
+        }
+
+        public void Inserir(TipoProdutoInfo pInfo)
+        {
+            TipoProdutoDAL dal = new TipoProdutoDAL();
+            dal.Inserir(pInfo);
+        }
+
+        public void Update(TipoProdutoInfo pInfo)
+        {
+            TipoProdutoDAL dal = new TipoProdutoDAL();
+            dal.Update(pInfo);
+        }
+
+        public void Delete(int pCdTipoProduto)
+        {
+            TipoProdutoDAL dal = new TipoProdutoDAL();
+            dal.Delete(pCdTipoProduto);
         }
     }
 }

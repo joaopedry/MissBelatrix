@@ -16,22 +16,28 @@ namespace MissBelatrix.Camadas.BLL
             return dal.Listar();
         }
 
-        public int GetCdCor(string DsCor)
+        public CorInfo Get(int pCdCor)
         {
             CorDAL dal = new CorDAL();
-            return dal.GetCdCor(DsCor);
+            return dal.Get(pCdCor);
         }
 
-        public void Inserir(CorInfo info)
+        public void Inserir(CorInfo pInfo)
         {
             CorDAL dal = new CorDAL();
-            dal.Inserir(info);
+            dal.Inserir(pInfo);
         }
 
-        public void Update(CorInfo info)
+        public void Update(CorInfo pInfo)
         {
             CorDAL dal = new CorDAL();
-            dal.Update(info);
+            dal.Update(pInfo);
+        }
+
+        public void Delete(int pCdCor)
+        {
+            CorDAL dal = new CorDAL();
+            dal.Delete(pCdCor);
         }
     }
 }

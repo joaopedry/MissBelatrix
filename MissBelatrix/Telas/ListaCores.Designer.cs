@@ -28,12 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbFiltrar = new System.Windows.Forms.Label();
             this.txtFiltrar = new System.Windows.Forms.TextBox();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.grvListaCores = new System.Windows.Forms.DataGridView();
+            this.clCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CdCor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DsCor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grvListaCores)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +69,7 @@
             this.btExcluir.TabIndex = 9;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btEditar
             // 
@@ -89,11 +95,53 @@
             // 
             // grvListaCores
             // 
-            this.grvListaCores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvListaCores.AllowUserToAddRows = false;
+            this.grvListaCores.AllowUserToDeleteRows = false;
+            this.grvListaCores.AllowUserToResizeColumns = false;
+            this.grvListaCores.AllowUserToResizeRows = false;
+            this.grvListaCores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clCheckBox,
+            this.CdCor,
+            this.DsCor});
             this.grvListaCores.Location = new System.Drawing.Point(115, 45);
+            this.grvListaCores.MultiSelect = false;
             this.grvListaCores.Name = "grvListaCores";
+            this.grvListaCores.ReadOnly = true;
+            this.grvListaCores.RowHeadersVisible = false;
+            this.grvListaCores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvListaCores.Size = new System.Drawing.Size(673, 392);
             this.grvListaCores.TabIndex = 6;
+            this.grvListaCores.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grvListaCores_CellMouseDown);
+            // 
+            // clCheckBox
+            // 
+            this.clCheckBox.FillWeight = 15.22843F;
+            this.clCheckBox.HeaderText = "";
+            this.clCheckBox.Name = "clCheckBox";
+            this.clCheckBox.ReadOnly = true;
+            this.clCheckBox.TrueValue = "";
+            this.clCheckBox.Width = 50;
+            // 
+            // CdCor
+            // 
+            this.CdCor.DataPropertyName = "CdCor";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CdCor.DefaultCellStyle = dataGridViewCellStyle1;
+            this.CdCor.HeaderText = "Código";
+            this.CdCor.Name = "CdCor";
+            this.CdCor.ReadOnly = true;
+            this.CdCor.Visible = false;
+            // 
+            // DsCor
+            // 
+            this.DsCor.DataPropertyName = "DsCor";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DsCor.DefaultCellStyle = dataGridViewCellStyle2;
+            this.DsCor.FillWeight = 184.7716F;
+            this.DsCor.HeaderText = "Cor";
+            this.DsCor.Name = "DsCor";
+            this.DsCor.ReadOnly = true;
+            this.DsCor.Width = 620;
             // 
             // ListaCores
             // 
@@ -123,5 +171,8 @@
         private System.Windows.Forms.Button btEditar;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.DataGridView grvListaCores;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn clCheckBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdCor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DsCor;
     }
 }

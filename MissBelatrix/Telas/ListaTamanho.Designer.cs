@@ -34,6 +34,7 @@
             this.btEditar = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.grvListaTamanhos = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grvListaTamanhos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +89,22 @@
             // 
             // grvListaTamanhos
             // 
+            this.grvListaTamanhos.AllowUserToAddRows = false;
+            this.grvListaTamanhos.AllowUserToDeleteRows = false;
             this.grvListaTamanhos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvListaTamanhos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1});
             this.grvListaTamanhos.Location = new System.Drawing.Point(115, 45);
             this.grvListaTamanhos.Name = "grvListaTamanhos";
             this.grvListaTamanhos.Size = new System.Drawing.Size(673, 392);
             this.grvListaTamanhos.TabIndex = 6;
+            this.grvListaTamanhos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvListaTamanhos_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Column1";
+            this.Column1.Name = "Column1";
+            this.Column1.ThreeState = true;
             // 
             // ListaTamanho
             // 
@@ -122,5 +134,6 @@
         private System.Windows.Forms.Button btEditar;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.DataGridView grvListaTamanhos;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Column1;
     }
 }
