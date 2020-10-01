@@ -129,6 +129,7 @@
             // 
             // CdProduto
             // 
+            this.CdProduto.DataPropertyName = "CdProduto";
             this.CdProduto.HeaderText = "Código";
             this.CdProduto.Name = "CdProduto";
             this.CdProduto.ReadOnly = true;

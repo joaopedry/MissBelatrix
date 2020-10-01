@@ -23,7 +23,7 @@ namespace MissBelatrix.Telas
             CarregaListaTipoProdutos();
         }
 
-        private void CarregaListaTipoProdutos()
+        public void CarregaListaTipoProdutos()
         {
             TipoProdutoBLL bll = new TipoProdutoBLL();
             grvListaTipoProdutos.DataSource = bll.Listar();
@@ -31,8 +31,44 @@ namespace MissBelatrix.Telas
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            CadastroTipoProduto cadastroTipoProduto = new CadastroTipoProduto();
+            CadastroTipoProduto cadastroTipoProduto = new CadastroTipoProduto(this);
             cadastroTipoProduto.Show();
+        }
+
+        private void btEditar_Click(object sender, EventArgs e)
+        {
+            CadastroTipoProduto cadastroTipoProduto = new CadastroTipoProduto(Convert.ToInt32(grvListaTipoProdutos.CurrentRow.Cells[1].Value), this);
+            cadastroTipoProduto.Show();
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            ExcluirTipoProduto();
+        }
+
+        private void ExcluirTipoProduto()
+        {
+            TipoProdutoBLL bll = new TipoProdutoBLL();
+            bll.Delete(Convert.ToInt32(grvListaTipoProdutos.CurrentRow.Cells[1].Value));
+            CarregaListaTipoProdutos();
+        }
+
+        private void grvListaTipoProdutos_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                foreach (DataGridViewRow row in grvListaTipoProdutos.Rows)
+                {
+                    if (row.Index == e.RowIndex)
+                    {
+                        row.Cells[0].Value = true;
+                    }
+                    else
+                    {
+                        row.Cells[0].Value = false;
+                    }
+                }
+            }
         }
     }
 }

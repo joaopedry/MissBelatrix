@@ -35,8 +35,8 @@
             this.btCadastrar = new System.Windows.Forms.Button();
             this.grvListaTamanhos = new System.Windows.Forms.DataGridView();
             this.clCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.CdTamanho = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.DsTamanho = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CdTamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DsTamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grvListaTamanhos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +67,7 @@
             this.btExcluir.TabIndex = 9;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btEditar
             // 
@@ -77,6 +78,7 @@
             this.btEditar.TabIndex = 8;
             this.btEditar.Text = "Editar";
             this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // btCadastrar
             // 
@@ -107,7 +109,7 @@
             this.grvListaTamanhos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvListaTamanhos.Size = new System.Drawing.Size(673, 392);
             this.grvListaTamanhos.TabIndex = 6;
-            this.grvListaTamanhos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvListaTamanhos_CellClick);
+            this.grvListaTamanhos.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grvListaTamanhos_CellMouseDown);
             // 
             // clCheckBox
             // 
@@ -121,6 +123,8 @@
             this.CdTamanho.HeaderText = "Código";
             this.CdTamanho.Name = "CdTamanho";
             this.CdTamanho.ReadOnly = true;
+            this.CdTamanho.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.CdTamanho.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // DsTamanho
             // 
@@ -128,6 +132,8 @@
             this.DsTamanho.HeaderText = "Tamanho";
             this.DsTamanho.Name = "DsTamanho";
             this.DsTamanho.ReadOnly = true;
+            this.DsTamanho.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.DsTamanho.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // ListaTamanho
             // 
@@ -158,7 +164,7 @@
         private System.Windows.Forms.Button btCadastrar;
         public System.Windows.Forms.DataGridView grvListaTamanhos;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clCheckBox;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn CdTamanho;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn DsTamanho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdTamanho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DsTamanho;
     }
 }

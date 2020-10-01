@@ -83,7 +83,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(313, 217);
+            this.btnCadastrar.Location = new System.Drawing.Point(216, 217);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(87, 30);
             this.btnCadastrar.TabIndex = 16;
@@ -150,7 +150,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(220, 217);
+            this.btnCancelar.Location = new System.Drawing.Point(313, 217);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(87, 30);
             this.btnCancelar.TabIndex = 28;
@@ -162,7 +162,7 @@
             // 
             this.btnAtualizar.Enabled = false;
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(313, 217);
+            this.btnAtualizar.Location = new System.Drawing.Point(216, 217);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(87, 30);
             this.btnAtualizar.TabIndex = 27;

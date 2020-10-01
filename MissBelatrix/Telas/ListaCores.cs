@@ -66,6 +66,11 @@ namespace MissBelatrix.Telas
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
+            ExcluirCor();
+        }
+
+        private void ExcluirCor()
+        {
             CorBLL bll = new CorBLL();
             bll.Delete(Convert.ToInt32(grvListaCores.CurrentRow.Cells[1].Value));
             CarregaListaCores();

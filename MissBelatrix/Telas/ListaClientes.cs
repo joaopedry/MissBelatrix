@@ -65,6 +65,11 @@ namespace MissBelatrix.Telas
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
+            ExcluirCliente();
+        }
+
+        private void ExcluirCliente()
+        {
             ClienteBLL bll = new ClienteBLL();
             bll.Delete(Convert.ToInt32(grvListaClientes.CurrentRow.Cells[1].Value));
             CarregaListaClientes();

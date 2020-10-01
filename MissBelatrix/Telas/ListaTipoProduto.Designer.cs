@@ -67,6 +67,7 @@
             this.btExcluir.TabIndex = 9;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btEditar
             // 
@@ -77,6 +78,7 @@
             this.btEditar.TabIndex = 8;
             this.btEditar.Text = "Editar";
             this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // btCadastrar
             // 
@@ -107,6 +109,7 @@
             this.grvListaTipoProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvListaTipoProdutos.Size = new System.Drawing.Size(673, 392);
             this.grvListaTipoProdutos.TabIndex = 6;
+            this.grvListaTipoProdutos.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grvListaTipoProdutos_CellMouseDown);
             // 
             // clCheckBox
             // 

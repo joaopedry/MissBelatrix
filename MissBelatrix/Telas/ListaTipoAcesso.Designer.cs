@@ -33,11 +33,11 @@
             this.btCadastrar = new System.Windows.Forms.Button();
             this.lbFiltrar = new System.Windows.Forms.Label();
             this.txtFiltrar = new System.Windows.Forms.TextBox();
-            this.grvTipoAcesso = new System.Windows.Forms.DataGridView();
+            this.grvListaTipoAcesso = new System.Windows.Forms.DataGridView();
             this.clCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.CdTipoAcesso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DsTipoAcesso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.grvTipoAcesso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvListaTipoAcesso)).BeginInit();
             this.SuspendLayout();
             // 
             // btExcluir
@@ -49,6 +49,7 @@
             this.btExcluir.TabIndex = 22;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btEditar
             // 
@@ -59,6 +60,7 @@
             this.btEditar.TabIndex = 21;
             this.btEditar.Text = "Editar";
             this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // btCadastrar
             // 
@@ -89,24 +91,25 @@
             this.txtFiltrar.Size = new System.Drawing.Size(621, 24);
             this.txtFiltrar.TabIndex = 18;
             // 
-            // grvTipoAcesso
+            // grvListaTipoAcesso
             // 
-            this.grvTipoAcesso.AllowUserToAddRows = false;
-            this.grvTipoAcesso.AllowUserToDeleteRows = false;
-            this.grvTipoAcesso.AllowUserToResizeColumns = false;
-            this.grvTipoAcesso.AllowUserToResizeRows = false;
-            this.grvTipoAcesso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grvTipoAcesso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grvListaTipoAcesso.AllowUserToAddRows = false;
+            this.grvListaTipoAcesso.AllowUserToDeleteRows = false;
+            this.grvListaTipoAcesso.AllowUserToResizeColumns = false;
+            this.grvListaTipoAcesso.AllowUserToResizeRows = false;
+            this.grvListaTipoAcesso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvListaTipoAcesso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clCheckBox,
             this.CdTipoAcesso,
             this.DsTipoAcesso});
-            this.grvTipoAcesso.Location = new System.Drawing.Point(115, 45);
-            this.grvTipoAcesso.MultiSelect = false;
-            this.grvTipoAcesso.Name = "grvTipoAcesso";
-            this.grvTipoAcesso.RowHeadersVisible = false;
-            this.grvTipoAcesso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.grvTipoAcesso.Size = new System.Drawing.Size(673, 392);
-            this.grvTipoAcesso.TabIndex = 17;
+            this.grvListaTipoAcesso.Location = new System.Drawing.Point(115, 45);
+            this.grvListaTipoAcesso.MultiSelect = false;
+            this.grvListaTipoAcesso.Name = "grvListaTipoAcesso";
+            this.grvListaTipoAcesso.RowHeadersVisible = false;
+            this.grvListaTipoAcesso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grvListaTipoAcesso.Size = new System.Drawing.Size(673, 392);
+            this.grvListaTipoAcesso.TabIndex = 17;
+            this.grvListaTipoAcesso.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grvListaTipoAcesso_CellMouseDown);
             // 
             // clCheckBox
             // 
@@ -138,11 +141,11 @@
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.lbFiltrar);
             this.Controls.Add(this.txtFiltrar);
-            this.Controls.Add(this.grvTipoAcesso);
+            this.Controls.Add(this.grvListaTipoAcesso);
             this.Name = "ListaTipoAcesso";
             this.Text = "ListaTipoAcesso";
             this.Load += new System.EventHandler(this.ListaTipoAcesso_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.grvTipoAcesso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grvListaTipoAcesso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,7 +158,7 @@
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Label lbFiltrar;
         private System.Windows.Forms.TextBox txtFiltrar;
-        public System.Windows.Forms.DataGridView grvTipoAcesso;
+        public System.Windows.Forms.DataGridView grvListaTipoAcesso;
         private System.Windows.Forms.DataGridViewCheckBoxColumn clCheckBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn CdTipoAcesso;
         private System.Windows.Forms.DataGridViewTextBoxColumn DsTipoAcesso;

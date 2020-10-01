@@ -63,8 +63,14 @@ namespace MissBelatrix.Telas
 
         private void btExcluir_Click(object sender, EventArgs e)
         {
+            ExcluirProduto();
+        }
+
+        private void ExcluirProduto()
+        {
             ProdutoBLL bll = new ProdutoBLL();
             bll.Delete(Convert.ToInt32(grvListaProdutos.CurrentRow.Cells[1].Value));
+            CarregaListaProdutos();
         }
     }
 }

@@ -23,7 +23,7 @@ namespace MissBelatrix.Telas
             CarregaListaTamanhos();
         }
 
-        private void CarregaListaTamanhos()
+        public void CarregaListaTamanhos()
         {
             TamanhoBLL bll = new TamanhoBLL();
             grvListaTamanhos.DataSource = bll.Listar();
@@ -31,16 +31,44 @@ namespace MissBelatrix.Telas
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
-            CadastroTamanho cadastroTamanho = new CadastroTamanho();
+            CadastroTamanho cadastroTamanho = new CadastroTamanho(this);
             cadastroTamanho.Show();
         }
 
-        private void grvListaTamanhos_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void btEditar_Click(object sender, EventArgs e)
         {
-            grvListaTamanhos.Rows[e.RowIndex].Cells[0].Value = true;
-            
+            CadastroTamanho cadastroTamanho = new CadastroTamanho(Convert.ToInt32(grvListaTamanhos.CurrentRow.Cells[1].Value), this);
+            cadastroTamanho.Show();
+        }
 
-            grvListaTamanhos.RefreshEdit();
+        private void grvListaTamanhos_CellMouseDown(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                foreach (DataGridViewRow row in grvListaTamanhos.Rows)
+                {
+                    if (row.Index == e.RowIndex)
+                    {
+                        row.Cells[0].Value = true;
+                    }
+                    else
+                    {
+                        row.Cells[0].Value = false;
+                    }
+                }
+            }
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            ExcluirTamanho();
+        }
+
+        private void ExcluirTamanho()
+        {
+            TamanhoBLL bll = new TamanhoBLL();
+            bll.Delete(Convert.ToInt32(grvListaTamanhos.CurrentRow.Cells[1].Value));
+            CarregaListaTamanhos();
         }
     }
 }

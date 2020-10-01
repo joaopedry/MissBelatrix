@@ -86,12 +86,6 @@ namespace MissBelatrix.Telas
             cbCdTipoAcesso.SelectedValue = pCdTipoAcesso as object;
         }
 
-        private void btnAdicionaTipoAcesso_Click(object sender, EventArgs e)
-        {
-            CadastroTipoAcesso tipoAcesso = new CadastroTipoAcesso();
-            tipoAcesso.Show();
-        }
-
         private void btAtualizar_Click(object sender, EventArgs e)
         {
             AtualizarCliente();
