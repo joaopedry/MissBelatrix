@@ -34,6 +34,13 @@
             this.btEditar = new System.Windows.Forms.Button();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.grvListaProdutos = new System.Windows.Forms.DataGridView();
+            this.clCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CdProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DsProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CdTipoProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CdTamanho = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CdCor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VlPreco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grvListaProdutos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,6 +71,7 @@
             this.btExcluir.TabIndex = 9;
             this.btExcluir.Text = "Excluir";
             this.btExcluir.UseVisualStyleBackColor = true;
+            this.btExcluir.Click += new System.EventHandler(this.btExcluir_Click);
             // 
             // btEditar
             // 
@@ -74,6 +82,7 @@
             this.btEditar.TabIndex = 8;
             this.btEditar.Text = "Editar";
             this.btEditar.UseVisualStyleBackColor = true;
+            this.btEditar.Click += new System.EventHandler(this.btEditar_Click);
             // 
             // btCadastrar
             // 
@@ -88,11 +97,76 @@
             // 
             // grvListaProdutos
             // 
+            this.grvListaProdutos.AllowUserToAddRows = false;
+            this.grvListaProdutos.AllowUserToDeleteRows = false;
+            this.grvListaProdutos.AllowUserToResizeColumns = false;
+            this.grvListaProdutos.AllowUserToResizeRows = false;
             this.grvListaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvListaProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clCheckBox,
+            this.CdProduto,
+            this.DsProduto,
+            this.CdTipoProduto,
+            this.CdTamanho,
+            this.CdCor,
+            this.VlPreco});
             this.grvListaProdutos.Location = new System.Drawing.Point(115, 45);
+            this.grvListaProdutos.MultiSelect = false;
             this.grvListaProdutos.Name = "grvListaProdutos";
+            this.grvListaProdutos.RowHeadersVisible = false;
+            this.grvListaProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvListaProdutos.Size = new System.Drawing.Size(673, 392);
             this.grvListaProdutos.TabIndex = 6;
+            this.grvListaProdutos.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.grvListaProdutos_CellMouseDown);
+            // 
+            // clCheckBox
+            // 
+            this.clCheckBox.HeaderText = "";
+            this.clCheckBox.Name = "clCheckBox";
+            this.clCheckBox.ReadOnly = true;
+            this.clCheckBox.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.clCheckBox.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // CdProduto
+            // 
+            this.CdProduto.HeaderText = "Código";
+            this.CdProduto.Name = "CdProduto";
+            this.CdProduto.ReadOnly = true;
+            // 
+            // DsProduto
+            // 
+            this.DsProduto.DataPropertyName = "DsProduto";
+            this.DsProduto.HeaderText = "Produto";
+            this.DsProduto.Name = "DsProduto";
+            this.DsProduto.ReadOnly = true;
+            // 
+            // CdTipoProduto
+            // 
+            this.CdTipoProduto.DataPropertyName = "CdTipoProduto";
+            this.CdTipoProduto.HeaderText = "Tipo do Produto";
+            this.CdTipoProduto.Name = "CdTipoProduto";
+            this.CdTipoProduto.ReadOnly = true;
+            // 
+            // CdTamanho
+            // 
+            this.CdTamanho.DataPropertyName = "CdTamanho";
+            this.CdTamanho.HeaderText = "Tamanho";
+            this.CdTamanho.Name = "CdTamanho";
+            this.CdTamanho.ReadOnly = true;
+            // 
+            // CdCor
+            // 
+            this.CdCor.DataPropertyName = "CdCor";
+            this.CdCor.HeaderText = "Cor";
+            this.CdCor.Name = "CdCor";
+            this.CdCor.ReadOnly = true;
+            // 
+            // VlPreco
+            // 
+            this.VlPreco.DataPropertyName = "VlPreco";
+            this.VlPreco.HeaderText = "Preço";
+            this.VlPreco.Name = "VlPreco";
+            this.VlPreco.ReadOnly = true;
             // 
             // ListaProdutos
             // 
@@ -121,6 +195,13 @@
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btEditar;
         private System.Windows.Forms.Button btCadastrar;
-        private System.Windows.Forms.DataGridView grvListaProdutos;
+        public System.Windows.Forms.DataGridView grvListaProdutos;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn clCheckBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdProduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DsProduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdTipoProduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdTamanho;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdCor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn VlPreco;
     }
 }

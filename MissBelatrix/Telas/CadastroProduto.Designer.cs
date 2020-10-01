@@ -39,6 +39,8 @@
             this.cbCdTamanho = new System.Windows.Forms.ComboBox();
             this.lbCdTipoProduto = new System.Windows.Forms.Label();
             this.cbCdTipoProduto = new System.Windows.Forms.ComboBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbCdCor
@@ -145,11 +147,37 @@
             this.cbCdTipoProduto.Size = new System.Drawing.Size(169, 25);
             this.cbCdTipoProduto.TabIndex = 25;
             // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(220, 217);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(87, 30);
+            this.btnCancelar.TabIndex = 28;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Enabled = false;
+            this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.Location = new System.Drawing.Point(313, 217);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(87, 30);
+            this.btnAtualizar.TabIndex = 27;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Visible = false;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // CadastroProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 265);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.lbCdTipoProduto);
             this.Controls.Add(this.cbCdTipoProduto);
             this.Controls.Add(this.lbCdTamanho);
@@ -163,7 +191,6 @@
             this.Controls.Add(this.txtDsProduto);
             this.Name = "CadastroProduto";
             this.Text = "CadastroProduto";
-            this.Load += new System.EventHandler(this.CadastroProduto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +208,7 @@
         private System.Windows.Forms.ComboBox cbCdTamanho;
         private System.Windows.Forms.Label lbCdTipoProduto;
         private System.Windows.Forms.ComboBox cbCdTipoProduto;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

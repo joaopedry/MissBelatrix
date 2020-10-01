@@ -34,6 +34,9 @@
             this.lbFiltrar = new System.Windows.Forms.Label();
             this.txtFiltrar = new System.Windows.Forms.TextBox();
             this.grvTipoAcesso = new System.Windows.Forms.DataGridView();
+            this.clCheckBox = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CdTipoAcesso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DsTipoAcesso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.grvTipoAcesso)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,11 +91,42 @@
             // 
             // grvTipoAcesso
             // 
+            this.grvTipoAcesso.AllowUserToAddRows = false;
+            this.grvTipoAcesso.AllowUserToDeleteRows = false;
+            this.grvTipoAcesso.AllowUserToResizeColumns = false;
+            this.grvTipoAcesso.AllowUserToResizeRows = false;
             this.grvTipoAcesso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grvTipoAcesso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clCheckBox,
+            this.CdTipoAcesso,
+            this.DsTipoAcesso});
             this.grvTipoAcesso.Location = new System.Drawing.Point(115, 45);
+            this.grvTipoAcesso.MultiSelect = false;
             this.grvTipoAcesso.Name = "grvTipoAcesso";
+            this.grvTipoAcesso.RowHeadersVisible = false;
+            this.grvTipoAcesso.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grvTipoAcesso.Size = new System.Drawing.Size(673, 392);
             this.grvTipoAcesso.TabIndex = 17;
+            // 
+            // clCheckBox
+            // 
+            this.clCheckBox.HeaderText = "";
+            this.clCheckBox.Name = "clCheckBox";
+            this.clCheckBox.ReadOnly = true;
+            // 
+            // CdTipoAcesso
+            // 
+            this.CdTipoAcesso.DataPropertyName = "CdTipoAcesso";
+            this.CdTipoAcesso.HeaderText = "Código";
+            this.CdTipoAcesso.Name = "CdTipoAcesso";
+            this.CdTipoAcesso.ReadOnly = true;
+            // 
+            // DsTipoAcesso
+            // 
+            this.DsTipoAcesso.DataPropertyName = "DsTipoAcesso";
+            this.DsTipoAcesso.HeaderText = "Tipo Acesso";
+            this.DsTipoAcesso.Name = "DsTipoAcesso";
+            this.DsTipoAcesso.ReadOnly = true;
             // 
             // ListaTipoAcesso
             // 
@@ -121,6 +155,9 @@
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Label lbFiltrar;
         private System.Windows.Forms.TextBox txtFiltrar;
-        private System.Windows.Forms.DataGridView grvTipoAcesso;
+        public System.Windows.Forms.DataGridView grvTipoAcesso;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn clCheckBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CdTipoAcesso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DsTipoAcesso;
     }
 }

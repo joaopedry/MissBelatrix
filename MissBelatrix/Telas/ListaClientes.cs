@@ -15,7 +15,6 @@ namespace MissBelatrix.Telas
 {
     public partial class ListaClientes : Form
     {
-        DataBaseConnect dataBase = new DataBaseConnect();
         public ListaClientes()
         {
             InitializeComponent();
