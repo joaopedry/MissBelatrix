@@ -17,7 +17,7 @@ namespace MissBelatrix.Camadas.BLL
         }
 
         public List<RegistroInfo> ListarFiltrado(DateTime DtRegistroFiltro)
-        {
+            {
             RegistroDAL dal = new RegistroDAL();
             return dal.ListarFiltrado(DtRegistroFiltro);
         }
