@@ -24,3 +24,4 @@ D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.ListaTipoProdut
 D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroCor.resources
 D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroTamanho.resources
 D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CadastroTipoProduto.resources
+D:\GitHub\MissBelatrix\MissBelatrix\obj\Debug\MissBelatrix.Telas.CaixaEntradaSaida.resources

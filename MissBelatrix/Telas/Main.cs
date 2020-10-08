@@ -57,5 +57,11 @@ namespace MissBelatrix.Telas
         {
             this.Close();
         }
+
+        private void entradasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CaixaEntradaSaida caixaEntradaSaida = new CaixaEntradaSaida();
+            caixaEntradaSaida.Show();
+        }
     }
 }

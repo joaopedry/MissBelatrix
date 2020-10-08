@@ -80,7 +80,7 @@ namespace MissBelatrix.Telas
             ProdutoInfo info = bll.Get(pCdProduto);
 
             txtDsProduto.Text = info.DsProduto;
-            txtVlPreco.Text = info.VlPreco;
+            txtVlPreco.Text = info.VlPreco.ToString();
             CarregaComboBoxes(info.CdTipoProduto, info.CdTamanho, info.CdCor);
         }
 
@@ -93,7 +93,7 @@ namespace MissBelatrix.Telas
             info.CdTipoProduto = ((TipoProdutoInfo)cbCdTipoProduto.SelectedItem).CdTipoProduto;
             info.CdTamanho = ((TamanhoInfo)cbCdTamanho.SelectedItem).CdTamanho;
             info.CdCor = ((CorInfo)cbCdCor.SelectedItem).CdCor;
-            info.VlPreco = txtVlPreco.Text;
+            info.VlPreco = float.Parse(txtVlPreco.Text);
 
             bll.Inserir(info);
         }
@@ -123,7 +123,7 @@ namespace MissBelatrix.Telas
 
             info.CdProduto = _CdProduto;
             info.DsProduto = txtDsProduto.Text;
-            info.VlPreco  = txtVlPreco.Text;
+            info.VlPreco  = float.Parse(txtVlPreco.Text);
             info.CdTipoProduto = ((TipoProdutoInfo)cbCdTipoProduto.SelectedItem).CdTipoProduto;
             info.CdTamanho = ((TamanhoInfo)cbCdTamanho.SelectedItem).CdTamanho;
             info.CdCor = ((CorInfo)cbCdCor.SelectedItem).CdCor;

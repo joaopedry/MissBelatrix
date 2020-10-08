@@ -15,6 +15,6 @@ namespace MissBelatrix.Camadas.Info
         public int CdCor { get; set; }
         public int CdTamanho { get; set; }
         public string DsProduto { get; set; }
-        public string VlPreco { get; set; }
+        public float VlPreco { get; set; }
     }
 }

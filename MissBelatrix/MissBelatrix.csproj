@@ -54,6 +54,7 @@
     <Compile Include="Camadas\BLL\ClienteBLL.cs" />
     <Compile Include="Camadas\BLL\CorBLL.cs" />
     <Compile Include="Camadas\BLL\ProdutoBLL.cs" />
+    <Compile Include="Camadas\BLL\RegistroBLL.cs" />
     <Compile Include="Camadas\BLL\TamanhoBLL.cs" />
     <Compile Include="Camadas\BLL\TipoAcessoBLL.cs" />
     <Compile Include="Camadas\BLL\TipoProdutoBLL.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Camadas\DAL\ClienteDAL.cs" />
     <Compile Include="Camadas\DAL\CorDAL.cs" />
     <Compile Include="Camadas\DAL\ProdutoDAL.cs" />
+    <Compile Include="Camadas\DAL\RegistroDAL.cs" />
     <Compile Include="Camadas\DAL\TamanhoDAL.cs" />
     <Compile Include="Camadas\DAL\TipoAcessoDAL.cs" />
     <Compile Include="Camadas\DAL\TipoProdutoDAL.cs" />
@@ -68,6 +70,7 @@
     <Compile Include="Camadas\Info\ClienteInfo.cs" />
     <Compile Include="Camadas\Info\CorInfo.cs" />
     <Compile Include="Camadas\Info\ProdutoInfo.cs" />
+    <Compile Include="Camadas\Info\RegistroInfo.cs" />
     <Compile Include="Camadas\Info\TamanhoInfo.cs" />
     <Compile Include="Camadas\Info\TipoAcessoInfo.cs" />
     <Compile Include="Camadas\Info\TipoProdutoInfo.cs" />
@@ -110,6 +113,12 @@
     </Compile>
     <Compile Include="Telas\CadastroTipoProduto.Designer.cs">
       <DependentUpon>CadastroTipoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\CaixaEntradaSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\CaixaEntradaSaida.Designer.cs">
+      <DependentUpon>CaixaEntradaSaida.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\ListaClientes.cs">
       <SubType>Form</SubType>
@@ -185,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CadastroTipoProduto.resx">
       <DependentUpon>CadastroTipoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CaixaEntradaSaida.resx">
+      <DependentUpon>CaixaEntradaSaida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\ListaClientes.resx">
       <DependentUpon>ListaClientes.cs</DependentUpon>
