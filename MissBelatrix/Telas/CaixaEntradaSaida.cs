@@ -124,6 +124,7 @@ namespace MissBelatrix.Telas
             info.CdProduto = ((ProdutoInfo)cbProduto.SelectedItem).CdProduto;
             info.DsDescricao = (txtDescricao.Text != string.Empty) ? txtDescricao.Text : ((ProdutoInfo)cbProduto.SelectedItem).DsProduto;
             info.DtRegistro = DateTime.Now;
+            info.DtLancamento = dtpData.Value;
             info.VlValor = CalculaValorTotalProduto(((ProdutoInfo)cbProduto.SelectedItem).CdProduto, Convert.ToInt32(txtQuantidade.Text)).ToString(); //ajustes
             info.VlQuantidade = Convert.ToInt32(txtQuantidade.Text);
             bll.Inserir(info);

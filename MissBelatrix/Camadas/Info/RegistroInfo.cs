@@ -13,6 +13,7 @@ namespace MissBelatrix.Camadas.Info
         public int CdRegistro { get; set; }
         public int StTipoOperacao { get; set; }
         public DateTime DtRegistro { get; set; }
+        public DateTime DtLancamento { get; set; }
         public int CdProduto { get; set; }
         public int CdCliente { get; set; }
         public int VlQuantidade { get; set; }

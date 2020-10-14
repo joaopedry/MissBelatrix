@@ -26,13 +26,13 @@ namespace MissBelatrix.Camadas.DAL
             { throw ex; }
         }
 
-        public List<RegistroInfo> ListarFiltrado(DateTime DtRegistroFiltro)
+        public List<RegistroInfo> ListarFiltrado(DateTime pDtLancamentoFiltro)
         {
             try
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    List<RegistroInfo> info = db.GetCollection<RegistroInfo>().Find(x => x.DtRegistro >= DtRegistroFiltro).ToList();
+                    List<RegistroInfo> info = db.GetCollection<RegistroInfo>().Find(x => x.DtLancamento >= pDtLancamentoFiltro).ToList();
 
                     return info;
                 }
