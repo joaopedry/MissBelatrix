@@ -46,33 +46,36 @@ namespace MissBelatrix.Telas
             txtDescricao.Visible = false;
             txtValor.Enabled = false;
             txtValor.Visible = false;
-            lbValor.Visible = false;
+            lbDescricao.Enabled = false;
             lbDescricao.Visible = false;
+            lbValor.Enabled = false;
+            lbValor.Visible = false;
 
-            txtQuantidade.Enabled = true;
-            txtQuantidade.Visible = true;
             cbCliente.Enabled = true;
             cbCliente.Visible = true;
             cbProduto.Enabled = true;
             cbProduto.Visible = true;
+            lbCliente.Visible = true;
+            lbProduto.Visible = true;
         }
 
         private void HabilitaCamposSaida()
-        {
+        { 
             txtDescricao.Enabled = true;
             txtDescricao.Visible = true;
             txtValor.Enabled = true;
             txtValor.Visible = true;
+            lbDescricao.Enabled = true;
+            lbDescricao.Visible = true;
+            lbValor.Enabled = true;
+            lbValor.Visible = true;
 
-            txtQuantidade.Enabled = false;
-            txtQuantidade.Visible = false;
             cbCliente.Enabled = false;
             cbCliente.Visible = false;
             cbProduto.Enabled = false;
             cbProduto.Visible = false;
             lbCliente.Visible = false;
             lbProduto.Visible = false;
-            lbQuantidade.Visible = false;
         }
 
         private void CarregaFiltroLista()
@@ -124,16 +127,23 @@ namespace MissBelatrix.Telas
             info.CdProduto = ((ProdutoInfo)cbProduto.SelectedItem).CdProduto;
             info.DsDescricao = (txtDescricao.Text != string.Empty) ? txtDescricao.Text : ((ProdutoInfo)cbProduto.SelectedItem).DsProduto;
             info.DtRegistro = DateTime.Now;
-            info.DtLancamento = dtpData.Value;
-            info.VlValor = CalculaValorTotalProduto(((ProdutoInfo)cbProduto.SelectedItem).CdProduto, Convert.ToInt32(txtQuantidade.Text)).ToString(); //ajustes
+            info.DtOperacao = dtpData.Value;
+            info.VlValor = CalculaValorTotal(((ProdutoInfo)cbProduto.SelectedItem).CdProduto, txtValor.Text, txtQuantidade.Text);
             info.VlQuantidade = Convert.ToInt32(txtQuantidade.Text);
             bll.Inserir(info);
         }
 
-        private float CalculaValorTotalProduto(int CdProduto, int VlQuantidade)
+        private string CalculaValorTotal(int CdProduto, string VlValor, string VlQuantidade)
         {
-            ProdutoBLL bll = new ProdutoBLL();
-            return ((bll.Get(CdProduto).VlPreco) * VlQuantidade);
+            if(rbEntrada.Checked == true)
+            {
+                ProdutoBLL bll = new ProdutoBLL();
+                return ((bll.Get(CdProduto).VlPreco) * Convert.ToInt32(VlQuantidade)).ToString();
+            }
+            else
+            {
+                return ((float)Convert.ToDouble(VlValor) * Convert.ToInt32(VlQuantidade)).ToString();
+            }
         }
 
         private void rbEntrada_CheckedChanged(object sender, EventArgs e)
