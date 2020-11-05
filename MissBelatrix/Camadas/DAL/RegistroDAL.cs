@@ -32,7 +32,7 @@ namespace MissBelatrix.Camadas.DAL
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    List<RegistroInfo> info = db.GetCollection<RegistroInfo>().Find(x => x.DtLancamento >= pDtLancamentoFiltro).ToList();
+                    List<RegistroInfo> info = db.GetCollection<RegistroInfo>().Find(x => x.DtOperacao >= pDtLancamentoFiltro).ToList();
 
                     return info;
                 }
