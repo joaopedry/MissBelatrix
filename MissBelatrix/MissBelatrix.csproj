@@ -120,6 +120,12 @@
     <Compile Include="Telas\CaixaEntradaSaida.Designer.cs">
       <DependentUpon>CaixaEntradaSaida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\DetalharEntradaSaida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\DetalharEntradaSaida.Designer.cs">
+      <DependentUpon>DetalharEntradaSaida.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\ListaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CaixaEntradaSaida.resx">
       <DependentUpon>CaixaEntradaSaida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\DetalharEntradaSaida.resx">
+      <DependentUpon>DetalharEntradaSaida.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\ListaClientes.resx">
       <DependentUpon>ListaClientes.cs</DependentUpon>

@@ -160,5 +160,10 @@ namespace MissBelatrix.Telas
         {
             CarregaListaEntradaSaida();
         }
+
+        private void grvCaixaEntradaSaida_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

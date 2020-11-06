@@ -85,15 +85,14 @@
             // 
             this.grvCaixaEntradaSaida.AllowUserToAddRows = false;
             this.grvCaixaEntradaSaida.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.grvCaixaEntradaSaida.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grvCaixaEntradaSaida.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grvCaixaEntradaSaida.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grvCaixaEntradaSaida.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -110,13 +109,14 @@
             this.grvCaixaEntradaSaida.Name = "grvCaixaEntradaSaida";
             this.grvCaixaEntradaSaida.ReadOnly = true;
             this.grvCaixaEntradaSaida.RowHeadersVisible = false;
-            this.grvCaixaEntradaSaida.Size = new System.Drawing.Size(743, 246);
+            this.grvCaixaEntradaSaida.Size = new System.Drawing.Size(823, 246);
             this.grvCaixaEntradaSaida.TabIndex = 2;
+            this.grvCaixaEntradaSaida.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grvCaixaEntradaSaida_CellDoubleClick);
             // 
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.btnRegistrar.Location = new System.Drawing.Point(695, 110);
+            this.btnRegistrar.Location = new System.Drawing.Point(775, 108);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(76, 36);
             this.btnRegistrar.TabIndex = 3;
@@ -143,17 +143,17 @@
             this.dtpData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpData.Location = new System.Drawing.Point(28, 78);
-            this.dtpData.MaximumSize = new System.Drawing.Size(101, 24);
-            this.dtpData.MinimumSize = new System.Drawing.Size(101, 24);
+            this.dtpData.MaximumSize = new System.Drawing.Size(105, 24);
+            this.dtpData.MinimumSize = new System.Drawing.Size(105, 24);
             this.dtpData.Name = "dtpData";
-            this.dtpData.Size = new System.Drawing.Size(101, 24);
+            this.dtpData.Size = new System.Drawing.Size(105, 24);
             this.dtpData.TabIndex = 6;
             // 
             // lbProduto
             // 
             this.lbProduto.AutoSize = true;
             this.lbProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbProduto.Location = new System.Drawing.Point(379, 58);
+            this.lbProduto.Location = new System.Drawing.Point(414, 58);
             this.lbProduto.Name = "lbProduto";
             this.lbProduto.Size = new System.Drawing.Size(55, 16);
             this.lbProduto.TabIndex = 7;
@@ -186,7 +186,7 @@
             // 
             this.lbQuantidade.AutoSize = true;
             this.lbQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbQuantidade.Location = new System.Drawing.Point(616, 58);
+            this.lbQuantidade.Location = new System.Drawing.Point(685, 58);
             this.lbQuantidade.Name = "lbQuantidade";
             this.lbQuantidade.Size = new System.Drawing.Size(81, 16);
             this.lbQuantidade.TabIndex = 11;
@@ -195,16 +195,16 @@
             // txtQuantidade
             // 
             this.txtQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantidade.Location = new System.Drawing.Point(619, 78);
+            this.txtQuantidade.Location = new System.Drawing.Point(688, 78);
             this.txtQuantidade.Name = "txtQuantidade";
-            this.txtQuantidade.Size = new System.Drawing.Size(152, 24);
+            this.txtQuantidade.Size = new System.Drawing.Size(163, 24);
             this.txtQuantidade.TabIndex = 10;
             // 
             // lbDescricaoSaldo
             // 
             this.lbDescricaoSaldo.AutoSize = true;
             this.lbDescricaoSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbDescricaoSaldo.Location = new System.Drawing.Point(633, 419);
+            this.lbDescricaoSaldo.Location = new System.Drawing.Point(756, 425);
             this.lbDescricaoSaldo.Name = "lbDescricaoSaldo";
             this.lbDescricaoSaldo.Size = new System.Drawing.Size(44, 16);
             this.lbDescricaoSaldo.TabIndex = 12;
@@ -214,7 +214,7 @@
             // 
             this.lbSaldo.AutoSize = true;
             this.lbSaldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbSaldo.Location = new System.Drawing.Point(704, 419);
+            this.lbSaldo.Location = new System.Drawing.Point(827, 425);
             this.lbSaldo.Name = "lbSaldo";
             this.lbSaldo.Size = new System.Drawing.Size(12, 16);
             this.lbSaldo.TabIndex = 13;
@@ -244,11 +244,11 @@
             // 
             this.cbProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cbProduto.FormattingEnabled = true;
-            this.cbProduto.Location = new System.Drawing.Point(382, 78);
-            this.cbProduto.MaximumSize = new System.Drawing.Size(221, 0);
-            this.cbProduto.MinimumSize = new System.Drawing.Size(221, 0);
+            this.cbProduto.Location = new System.Drawing.Point(417, 78);
+            this.cbProduto.MaximumSize = new System.Drawing.Size(260, 0);
+            this.cbProduto.MinimumSize = new System.Drawing.Size(260, 0);
             this.cbProduto.Name = "cbProduto";
-            this.cbProduto.Size = new System.Drawing.Size(221, 24);
+            this.cbProduto.Size = new System.Drawing.Size(260, 24);
             this.cbProduto.TabIndex = 16;
             // 
             // cbCliente
@@ -256,8 +256,10 @@
             this.cbCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.cbCliente.FormattingEnabled = true;
             this.cbCliente.Location = new System.Drawing.Point(145, 78);
+            this.cbCliente.MaximumSize = new System.Drawing.Size(260, 0);
+            this.cbCliente.MinimumSize = new System.Drawing.Size(260, 0);
             this.cbCliente.Name = "cbCliente";
-            this.cbCliente.Size = new System.Drawing.Size(221, 24);
+            this.cbCliente.Size = new System.Drawing.Size(260, 24);
             this.cbCliente.TabIndex = 18;
             // 
             // lbCliente
@@ -287,10 +289,10 @@
             this.txtDescricao.Enabled = false;
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.Location = new System.Drawing.Point(145, 78);
-            this.txtDescricao.MaximumSize = new System.Drawing.Size(221, 24);
-            this.txtDescricao.MinimumSize = new System.Drawing.Size(221, 24);
+            this.txtDescricao.MaximumSize = new System.Drawing.Size(260, 24);
+            this.txtDescricao.MinimumSize = new System.Drawing.Size(260, 24);
             this.txtDescricao.Name = "txtDescricao";
-            this.txtDescricao.Size = new System.Drawing.Size(221, 24);
+            this.txtDescricao.Size = new System.Drawing.Size(260, 24);
             this.txtDescricao.TabIndex = 21;
             this.txtDescricao.Visible = false;
             // 
@@ -299,7 +301,7 @@
             this.lbValor.AutoSize = true;
             this.lbValor.Enabled = false;
             this.lbValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.lbValor.Location = new System.Drawing.Point(379, 58);
+            this.lbValor.Location = new System.Drawing.Point(414, 58);
             this.lbValor.Name = "lbValor";
             this.lbValor.Size = new System.Drawing.Size(43, 16);
             this.lbValor.TabIndex = 24;
@@ -310,17 +312,18 @@
             // 
             this.txtValor.Enabled = false;
             this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(382, 78);
-            this.txtValor.MaximumSize = new System.Drawing.Size(221, 24);
-            this.txtValor.MinimumSize = new System.Drawing.Size(221, 24);
+            this.txtValor.Location = new System.Drawing.Point(417, 78);
+            this.txtValor.MaximumSize = new System.Drawing.Size(260, 24);
+            this.txtValor.MinimumSize = new System.Drawing.Size(260, 24);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(221, 24);
+            this.txtValor.Size = new System.Drawing.Size(260, 24);
             this.txtValor.TabIndex = 23;
             this.txtValor.Visible = false;
             // 
             // CdRegistro
             // 
             this.CdRegistro.DataPropertyName = "CdRegistro";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.CdRegistro.DefaultCellStyle = dataGridViewCellStyle3;
             this.CdRegistro.HeaderText = "Código";
@@ -331,26 +334,29 @@
             // StTipoOperacao
             // 
             this.StTipoOperacao.DataPropertyName = "StTipoOperacao";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.StTipoOperacao.DefaultCellStyle = dataGridViewCellStyle4;
             this.StTipoOperacao.HeaderText = "Tipo de Operação";
             this.StTipoOperacao.Name = "StTipoOperacao";
             this.StTipoOperacao.ReadOnly = true;
-            this.StTipoOperacao.Width = 120;
+            this.StTipoOperacao.Width = 148;
             // 
             // DsDescricao
             // 
             this.DsDescricao.DataPropertyName = "DsDescricao";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.DsDescricao.DefaultCellStyle = dataGridViewCellStyle5;
             this.DsDescricao.HeaderText = "Descrição";
             this.DsDescricao.Name = "DsDescricao";
             this.DsDescricao.ReadOnly = true;
-            this.DsDescricao.Width = 120;
+            this.DsDescricao.Width = 410;
             // 
             // VlQuantidade
             // 
             this.VlQuantidade.DataPropertyName = "VlQuantidade";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.VlQuantidade.DefaultCellStyle = dataGridViewCellStyle6;
             this.VlQuantidade.HeaderText = "Quantidade";
@@ -360,31 +366,37 @@
             // VlValor
             // 
             this.VlValor.DataPropertyName = "VlValor";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.VlValor.DefaultCellStyle = dataGridViewCellStyle7;
             this.VlValor.HeaderText = "Valor Total";
             this.VlValor.Name = "VlValor";
             this.VlValor.ReadOnly = true;
+            this.VlValor.Width = 102;
             // 
             // DtOperacao
             // 
             this.DtOperacao.DataPropertyName = "DtOperacao";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.DtOperacao.DefaultCellStyle = dataGridViewCellStyle8;
             this.DtOperacao.HeaderText = "Data Operação";
             this.DtOperacao.Name = "DtOperacao";
             this.DtOperacao.ReadOnly = true;
-            this.DtOperacao.Width = 120;
+            this.DtOperacao.Visible = false;
+            this.DtOperacao.Width = 130;
             // 
             // DtRegistro
             // 
             this.DtRegistro.DataPropertyName = "DtRegistro";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.DtRegistro.DefaultCellStyle = dataGridViewCellStyle9;
             this.DtRegistro.HeaderText = "Data do Regristro";
             this.DtRegistro.Name = "DtRegistro";
             this.DtRegistro.ReadOnly = true;
-            this.DtRegistro.Width = 120;
+            this.DtRegistro.Visible = false;
+            this.DtRegistro.Width = 145;
             // 
             // CdProduto
             // 
@@ -406,7 +418,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(881, 460);
             this.Controls.Add(this.lbValor);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.lbDescricao);
