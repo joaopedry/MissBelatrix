@@ -28,253 +28,197 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbCdRegistroDesc = new System.Windows.Forms.Label();
-            this.lbCdRegistro = new System.Windows.Forms.Label();
-            this.lbStTipoOperacaoDesc = new System.Windows.Forms.Label();
-            this.lbDtRegistroDesc = new System.Windows.Forms.Label();
-            this.lbDtOperacaoDesc = new System.Windows.Forms.Label();
-            this.lbCdProdutoDesc = new System.Windows.Forms.Label();
-            this.lbCdClienteDesc = new System.Windows.Forms.Label();
-            this.lbDsDescricaoProdutoDesc = new System.Windows.Forms.Label();
-            this.lbDsClienteDesc = new System.Windows.Forms.Label();
-            this.lbVlQuantidadeDesc = new System.Windows.Forms.Label();
-            this.lbVlValorDesc = new System.Windows.Forms.Label();
-            this.lbStTipoOperacao = new System.Windows.Forms.Label();
-            this.lbDtRegistro = new System.Windows.Forms.Label();
-            this.lbDtOperacao = new System.Windows.Forms.Label();
-            this.lbCdProduto = new System.Windows.Forms.Label();
-            this.lbCdCliente = new System.Windows.Forms.Label();
+            this.txtStTipoOperacao = new System.Windows.Forms.TextBox();
+            this.txtDsDescricaoProduto = new System.Windows.Forms.TextBox();
+            this.txtDtRegistro = new System.Windows.Forms.TextBox();
+            this.txtDtOperacao = new System.Windows.Forms.TextBox();
+            this.txtVlQuantidade = new System.Windows.Forms.TextBox();
+            this.txtVlValor = new System.Windows.Forms.TextBox();
+            this.txtDsCliente = new System.Windows.Forms.TextBox();
+            this.txtCdRegistro = new System.Windows.Forms.TextBox();
+            this.lbVlValor = new System.Windows.Forms.Label();
             this.lbVlQuantidade = new System.Windows.Forms.Label();
             this.lbDsCliente = new System.Windows.Forms.Label();
             this.lbDsDescricaoProduto = new System.Windows.Forms.Label();
-            this.lbVlValor = new System.Windows.Forms.Label();
+            this.lbDtOperacao = new System.Windows.Forms.Label();
+            this.lbDtRegistro = new System.Windows.Forms.Label();
+            this.lbStTipoOperacao = new System.Windows.Forms.Label();
+            this.lbCdRegistro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lbCdRegistroDesc
+            // txtStTipoOperacao
             // 
-            this.lbCdRegistroDesc.AutoSize = true;
-            this.lbCdRegistroDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCdRegistroDesc.Location = new System.Drawing.Point(12, 33);
-            this.lbCdRegistroDesc.Name = "lbCdRegistroDesc";
-            this.lbCdRegistroDesc.Size = new System.Drawing.Size(59, 20);
-            this.lbCdRegistroDesc.TabIndex = 0;
-            this.lbCdRegistroDesc.Text = "Código";
+            this.txtStTipoOperacao.Enabled = false;
+            this.txtStTipoOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtStTipoOperacao.Location = new System.Drawing.Point(327, 22);
+            this.txtStTipoOperacao.Name = "txtStTipoOperacao";
+            this.txtStTipoOperacao.Size = new System.Drawing.Size(144, 26);
+            this.txtStTipoOperacao.TabIndex = 47;
             // 
-            // lbCdRegistro
+            // txtDsDescricaoProduto
             // 
-            this.lbCdRegistro.AutoSize = true;
-            this.lbCdRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCdRegistro.Location = new System.Drawing.Point(97, 33);
-            this.lbCdRegistro.Name = "lbCdRegistro";
-            this.lbCdRegistro.Size = new System.Drawing.Size(14, 20);
-            this.lbCdRegistro.TabIndex = 1;
-            this.lbCdRegistro.Text = "-";
+            this.txtDsDescricaoProduto.Enabled = false;
+            this.txtDsDescricaoProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtDsDescricaoProduto.Location = new System.Drawing.Point(160, 57);
+            this.txtDsDescricaoProduto.Name = "txtDsDescricaoProduto";
+            this.txtDsDescricaoProduto.Size = new System.Drawing.Size(606, 26);
+            this.txtDsDescricaoProduto.TabIndex = 46;
             // 
-            // lbStTipoOperacaoDesc
+            // txtDtRegistro
             // 
-            this.lbStTipoOperacaoDesc.AutoSize = true;
-            this.lbStTipoOperacaoDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStTipoOperacaoDesc.Location = new System.Drawing.Point(12, 71);
-            this.lbStTipoOperacaoDesc.Name = "lbStTipoOperacaoDesc";
-            this.lbStTipoOperacaoDesc.Size = new System.Drawing.Size(79, 20);
-            this.lbStTipoOperacaoDesc.TabIndex = 2;
-            this.lbStTipoOperacaoDesc.Text = "Operação";
+            this.txtDtRegistro.Enabled = false;
+            this.txtDtRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtDtRegistro.Location = new System.Drawing.Point(558, 89);
+            this.txtDtRegistro.Name = "txtDtRegistro";
+            this.txtDtRegistro.Size = new System.Drawing.Size(208, 26);
+            this.txtDtRegistro.TabIndex = 45;
             // 
-            // lbDtRegistroDesc
+            // txtDtOperacao
             // 
-            this.lbDtRegistroDesc.AutoSize = true;
-            this.lbDtRegistroDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDtRegistroDesc.Location = new System.Drawing.Point(12, 111);
-            this.lbDtRegistroDesc.Name = "lbDtRegistroDesc";
-            this.lbDtRegistroDesc.Size = new System.Drawing.Size(130, 20);
-            this.lbDtRegistroDesc.TabIndex = 3;
-            this.lbDtRegistroDesc.Text = "Data do Registro";
+            this.txtDtOperacao.Enabled = false;
+            this.txtDtOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtDtOperacao.Location = new System.Drawing.Point(160, 90);
+            this.txtDtOperacao.Name = "txtDtOperacao";
+            this.txtDtOperacao.Size = new System.Drawing.Size(212, 26);
+            this.txtDtOperacao.TabIndex = 44;
             // 
-            // lbDtOperacaoDesc
+            // txtVlQuantidade
             // 
-            this.lbDtOperacaoDesc.AutoSize = true;
-            this.lbDtOperacaoDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDtOperacaoDesc.Location = new System.Drawing.Point(12, 151);
-            this.lbDtOperacaoDesc.Name = "lbDtOperacaoDesc";
-            this.lbDtOperacaoDesc.Size = new System.Drawing.Size(140, 20);
-            this.lbDtOperacaoDesc.TabIndex = 4;
-            this.lbDtOperacaoDesc.Text = "Data da Operação";
+            this.txtVlQuantidade.Enabled = false;
+            this.txtVlQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtVlQuantidade.Location = new System.Drawing.Point(160, 122);
+            this.txtVlQuantidade.Name = "txtVlQuantidade";
+            this.txtVlQuantidade.Size = new System.Drawing.Size(100, 26);
+            this.txtVlQuantidade.TabIndex = 43;
             // 
-            // lbCdProdutoDesc
+            // txtVlValor
             // 
-            this.lbCdProdutoDesc.AutoSize = true;
-            this.lbCdProdutoDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCdProdutoDesc.Location = new System.Drawing.Point(12, 184);
-            this.lbCdProdutoDesc.Name = "lbCdProdutoDesc";
-            this.lbCdProdutoDesc.Size = new System.Drawing.Size(141, 20);
-            this.lbCdProdutoDesc.TabIndex = 5;
-            this.lbCdProdutoDesc.Text = "Código do Produto";
+            this.txtVlValor.Enabled = false;
+            this.txtVlValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtVlValor.Location = new System.Drawing.Point(558, 122);
+            this.txtVlValor.Name = "txtVlValor";
+            this.txtVlValor.Size = new System.Drawing.Size(208, 26);
+            this.txtVlValor.TabIndex = 42;
             // 
-            // lbCdClienteDesc
+            // txtDsCliente
             // 
-            this.lbCdClienteDesc.AutoSize = true;
-            this.lbCdClienteDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCdClienteDesc.Location = new System.Drawing.Point(12, 253);
-            this.lbCdClienteDesc.Name = "lbCdClienteDesc";
-            this.lbCdClienteDesc.Size = new System.Drawing.Size(134, 20);
-            this.lbCdClienteDesc.TabIndex = 6;
-            this.lbCdClienteDesc.Text = "Código do Cliente";
+            this.txtDsCliente.Enabled = false;
+            this.txtDsCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtDsCliente.Location = new System.Drawing.Point(558, 22);
+            this.txtDsCliente.Name = "txtDsCliente";
+            this.txtDsCliente.Size = new System.Drawing.Size(208, 26);
+            this.txtDsCliente.TabIndex = 41;
             // 
-            // lbDsDescricaoProdutoDesc
+            // txtCdRegistro
             // 
-            this.lbDsDescricaoProdutoDesc.AutoSize = true;
-            this.lbDsDescricaoProdutoDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsDescricaoProdutoDesc.Location = new System.Drawing.Point(12, 220);
-            this.lbDsDescricaoProdutoDesc.Name = "lbDsDescricaoProdutoDesc";
-            this.lbDsDescricaoProdutoDesc.Size = new System.Drawing.Size(80, 20);
-            this.lbDsDescricaoProdutoDesc.TabIndex = 7;
-            this.lbDsDescricaoProdutoDesc.Text = "Descrição";
-            // 
-            // lbDsClienteDesc
-            // 
-            this.lbDsClienteDesc.AutoSize = true;
-            this.lbDsClienteDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsClienteDesc.Location = new System.Drawing.Point(12, 282);
-            this.lbDsClienteDesc.Name = "lbDsClienteDesc";
-            this.lbDsClienteDesc.Size = new System.Drawing.Size(58, 20);
-            this.lbDsClienteDesc.TabIndex = 8;
-            this.lbDsClienteDesc.Text = "Cliente";
-            // 
-            // lbVlQuantidadeDesc
-            // 
-            this.lbVlQuantidadeDesc.AutoSize = true;
-            this.lbVlQuantidadeDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVlQuantidadeDesc.Location = new System.Drawing.Point(12, 311);
-            this.lbVlQuantidadeDesc.Name = "lbVlQuantidadeDesc";
-            this.lbVlQuantidadeDesc.Size = new System.Drawing.Size(92, 20);
-            this.lbVlQuantidadeDesc.TabIndex = 9;
-            this.lbVlQuantidadeDesc.Text = "Quantidade";
-            // 
-            // lbVlValorDesc
-            // 
-            this.lbVlValorDesc.AutoSize = true;
-            this.lbVlValorDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVlValorDesc.Location = new System.Drawing.Point(12, 341);
-            this.lbVlValorDesc.Name = "lbVlValorDesc";
-            this.lbVlValorDesc.Size = new System.Drawing.Size(46, 20);
-            this.lbVlValorDesc.TabIndex = 11;
-            this.lbVlValorDesc.Text = "Valor";
-            // 
-            // lbStTipoOperacao
-            // 
-            this.lbStTipoOperacao.AutoSize = true;
-            this.lbStTipoOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbStTipoOperacao.Location = new System.Drawing.Point(97, 71);
-            this.lbStTipoOperacao.Name = "lbStTipoOperacao";
-            this.lbStTipoOperacao.Size = new System.Drawing.Size(14, 20);
-            this.lbStTipoOperacao.TabIndex = 12;
-            this.lbStTipoOperacao.Text = "-";
-            // 
-            // lbDtRegistro
-            // 
-            this.lbDtRegistro.AutoSize = true;
-            this.lbDtRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDtRegistro.Location = new System.Drawing.Point(161, 111);
-            this.lbDtRegistro.Name = "lbDtRegistro";
-            this.lbDtRegistro.Size = new System.Drawing.Size(14, 20);
-            this.lbDtRegistro.TabIndex = 13;
-            this.lbDtRegistro.Text = "-";
-            // 
-            // lbDtOperacao
-            // 
-            this.lbDtOperacao.AutoSize = true;
-            this.lbDtOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDtOperacao.Location = new System.Drawing.Point(172, 151);
-            this.lbDtOperacao.Name = "lbDtOperacao";
-            this.lbDtOperacao.Size = new System.Drawing.Size(14, 20);
-            this.lbDtOperacao.TabIndex = 14;
-            this.lbDtOperacao.Text = "-";
-            // 
-            // lbCdProduto
-            // 
-            this.lbCdProduto.AutoSize = true;
-            this.lbCdProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCdProduto.Location = new System.Drawing.Point(161, 184);
-            this.lbCdProduto.Name = "lbCdProduto";
-            this.lbCdProduto.Size = new System.Drawing.Size(14, 20);
-            this.lbCdProduto.TabIndex = 15;
-            this.lbCdProduto.Text = "-";
-            // 
-            // lbCdCliente
-            // 
-            this.lbCdCliente.AutoSize = true;
-            this.lbCdCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbCdCliente.Location = new System.Drawing.Point(161, 253);
-            this.lbCdCliente.Name = "lbCdCliente";
-            this.lbCdCliente.Size = new System.Drawing.Size(14, 20);
-            this.lbCdCliente.TabIndex = 16;
-            this.lbCdCliente.Text = "-";
-            // 
-            // lbVlQuantidade
-            // 
-            this.lbVlQuantidade.AutoSize = true;
-            this.lbVlQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVlQuantidade.Location = new System.Drawing.Point(138, 311);
-            this.lbVlQuantidade.Name = "lbVlQuantidade";
-            this.lbVlQuantidade.Size = new System.Drawing.Size(14, 20);
-            this.lbVlQuantidade.TabIndex = 17;
-            this.lbVlQuantidade.Text = "-";
-            // 
-            // lbDsCliente
-            // 
-            this.lbDsCliente.AutoSize = true;
-            this.lbDsCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsCliente.Location = new System.Drawing.Point(90, 282);
-            this.lbDsCliente.Name = "lbDsCliente";
-            this.lbDsCliente.Size = new System.Drawing.Size(14, 20);
-            this.lbDsCliente.TabIndex = 18;
-            this.lbDsCliente.Text = "-";
-            // 
-            // lbDsDescricaoProduto
-            // 
-            this.lbDsDescricaoProduto.AutoSize = true;
-            this.lbDsDescricaoProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsDescricaoProduto.Location = new System.Drawing.Point(98, 220);
-            this.lbDsDescricaoProduto.Name = "lbDsDescricaoProduto";
-            this.lbDsDescricaoProduto.Size = new System.Drawing.Size(14, 20);
-            this.lbDsDescricaoProduto.TabIndex = 19;
-            this.lbDsDescricaoProduto.Text = "-";
+            this.txtCdRegistro.Enabled = false;
+            this.txtCdRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCdRegistro.Location = new System.Drawing.Point(160, 22);
+            this.txtCdRegistro.Name = "txtCdRegistro";
+            this.txtCdRegistro.Size = new System.Drawing.Size(65, 26);
+            this.txtCdRegistro.TabIndex = 40;
             // 
             // lbVlValor
             // 
             this.lbVlValor.AutoSize = true;
             this.lbVlValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbVlValor.Location = new System.Drawing.Point(90, 341);
+            this.lbVlValor.Location = new System.Drawing.Point(440, 128);
             this.lbVlValor.Name = "lbVlValor";
-            this.lbVlValor.Size = new System.Drawing.Size(14, 20);
-            this.lbVlValor.TabIndex = 20;
-            this.lbVlValor.Text = "-";
+            this.lbVlValor.Size = new System.Drawing.Size(89, 20);
+            this.lbVlValor.TabIndex = 39;
+            this.lbVlValor.Text = "Valor Total:";
+            // 
+            // lbVlQuantidade
+            // 
+            this.lbVlQuantidade.AutoSize = true;
+            this.lbVlQuantidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbVlQuantidade.Location = new System.Drawing.Point(32, 125);
+            this.lbVlQuantidade.Name = "lbVlQuantidade";
+            this.lbVlQuantidade.Size = new System.Drawing.Size(96, 20);
+            this.lbVlQuantidade.TabIndex = 38;
+            this.lbVlQuantidade.Text = "Quantidade:";
+            // 
+            // lbDsCliente
+            // 
+            this.lbDsCliente.AutoSize = true;
+            this.lbDsCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDsCliente.Location = new System.Drawing.Point(490, 25);
+            this.lbDsCliente.Name = "lbDsCliente";
+            this.lbDsCliente.Size = new System.Drawing.Size(62, 20);
+            this.lbDsCliente.TabIndex = 37;
+            this.lbDsCliente.Text = "Cliente:";
+            // 
+            // lbDsDescricaoProduto
+            // 
+            this.lbDsDescricaoProduto.AutoSize = true;
+            this.lbDsDescricaoProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDsDescricaoProduto.Location = new System.Drawing.Point(32, 60);
+            this.lbDsDescricaoProduto.Name = "lbDsDescricaoProduto";
+            this.lbDsDescricaoProduto.Size = new System.Drawing.Size(84, 20);
+            this.lbDsDescricaoProduto.TabIndex = 36;
+            this.lbDsDescricaoProduto.Text = "Descrição:";
+            // 
+            // lbDtOperacao
+            // 
+            this.lbDtOperacao.AutoSize = true;
+            this.lbDtOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDtOperacao.Location = new System.Drawing.Point(32, 93);
+            this.lbDtOperacao.Name = "lbDtOperacao";
+            this.lbDtOperacao.Size = new System.Drawing.Size(122, 20);
+            this.lbDtOperacao.TabIndex = 35;
+            this.lbDtOperacao.Text = "Data Operação:";
+            // 
+            // lbDtRegistro
+            // 
+            this.lbDtRegistro.AutoSize = true;
+            this.lbDtRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDtRegistro.Location = new System.Drawing.Point(440, 90);
+            this.lbDtRegistro.Name = "lbDtRegistro";
+            this.lbDtRegistro.Size = new System.Drawing.Size(112, 20);
+            this.lbDtRegistro.TabIndex = 34;
+            this.lbDtRegistro.Text = "Data Registro:";
+            // 
+            // lbStTipoOperacao
+            // 
+            this.lbStTipoOperacao.AutoSize = true;
+            this.lbStTipoOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbStTipoOperacao.Location = new System.Drawing.Point(238, 25);
+            this.lbStTipoOperacao.Name = "lbStTipoOperacao";
+            this.lbStTipoOperacao.Size = new System.Drawing.Size(83, 20);
+            this.lbStTipoOperacao.TabIndex = 33;
+            this.lbStTipoOperacao.Text = "Operação:";
+            // 
+            // lbCdRegistro
+            // 
+            this.lbCdRegistro.AutoSize = true;
+            this.lbCdRegistro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCdRegistro.Location = new System.Drawing.Point(32, 25);
+            this.lbCdRegistro.Name = "lbCdRegistro";
+            this.lbCdRegistro.Size = new System.Drawing.Size(63, 20);
+            this.lbCdRegistro.TabIndex = 32;
+            this.lbCdRegistro.Text = "Código:";
             // 
             // DetalharEntradaSaida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 168);
+            this.Controls.Add(this.txtStTipoOperacao);
+            this.Controls.Add(this.txtDsDescricaoProduto);
+            this.Controls.Add(this.txtDtRegistro);
+            this.Controls.Add(this.txtDtOperacao);
+            this.Controls.Add(this.txtVlQuantidade);
+            this.Controls.Add(this.txtVlValor);
+            this.Controls.Add(this.txtDsCliente);
+            this.Controls.Add(this.txtCdRegistro);
             this.Controls.Add(this.lbVlValor);
-            this.Controls.Add(this.lbDsDescricaoProduto);
-            this.Controls.Add(this.lbDsCliente);
             this.Controls.Add(this.lbVlQuantidade);
-            this.Controls.Add(this.lbCdCliente);
-            this.Controls.Add(this.lbCdProduto);
+            this.Controls.Add(this.lbDsCliente);
+            this.Controls.Add(this.lbDsDescricaoProduto);
             this.Controls.Add(this.lbDtOperacao);
             this.Controls.Add(this.lbDtRegistro);
             this.Controls.Add(this.lbStTipoOperacao);
-            this.Controls.Add(this.lbVlValorDesc);
-            this.Controls.Add(this.lbVlQuantidadeDesc);
-            this.Controls.Add(this.lbDsClienteDesc);
-            this.Controls.Add(this.lbDsDescricaoProdutoDesc);
-            this.Controls.Add(this.lbCdClienteDesc);
-            this.Controls.Add(this.lbCdProdutoDesc);
-            this.Controls.Add(this.lbDtOperacaoDesc);
-            this.Controls.Add(this.lbDtRegistroDesc);
-            this.Controls.Add(this.lbStTipoOperacaoDesc);
             this.Controls.Add(this.lbCdRegistro);
-            this.Controls.Add(this.lbCdRegistroDesc);
             this.Name = "DetalharEntradaSaida";
             this.Text = "DetalharEntradaSaida";
             this.ResumeLayout(false);
@@ -284,25 +228,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbCdRegistroDesc;
-        private System.Windows.Forms.Label lbCdRegistro;
-        private System.Windows.Forms.Label lbStTipoOperacaoDesc;
-        private System.Windows.Forms.Label lbDtRegistroDesc;
-        private System.Windows.Forms.Label lbDtOperacaoDesc;
-        private System.Windows.Forms.Label lbCdProdutoDesc;
-        private System.Windows.Forms.Label lbCdClienteDesc;
-        private System.Windows.Forms.Label lbDsDescricaoProdutoDesc;
-        private System.Windows.Forms.Label lbDsClienteDesc;
-        private System.Windows.Forms.Label lbVlQuantidadeDesc;
-        private System.Windows.Forms.Label lbVlValorDesc;
-        private System.Windows.Forms.Label lbStTipoOperacao;
-        private System.Windows.Forms.Label lbDtRegistro;
-        private System.Windows.Forms.Label lbDtOperacao;
-        private System.Windows.Forms.Label lbCdProduto;
-        private System.Windows.Forms.Label lbCdCliente;
+        private System.Windows.Forms.TextBox txtStTipoOperacao;
+        private System.Windows.Forms.TextBox txtDsDescricaoProduto;
+        private System.Windows.Forms.TextBox txtDtRegistro;
+        private System.Windows.Forms.TextBox txtDtOperacao;
+        private System.Windows.Forms.TextBox txtVlQuantidade;
+        private System.Windows.Forms.TextBox txtVlValor;
+        private System.Windows.Forms.TextBox txtDsCliente;
+        private System.Windows.Forms.TextBox txtCdRegistro;
+        private System.Windows.Forms.Label lbVlValor;
         private System.Windows.Forms.Label lbVlQuantidade;
         private System.Windows.Forms.Label lbDsCliente;
         private System.Windows.Forms.Label lbDsDescricaoProduto;
-        private System.Windows.Forms.Label lbVlValor;
+        private System.Windows.Forms.Label lbDtOperacao;
+        private System.Windows.Forms.Label lbDtRegistro;
+        private System.Windows.Forms.Label lbStTipoOperacao;
+        private System.Windows.Forms.Label lbCdRegistro;
     }
 }

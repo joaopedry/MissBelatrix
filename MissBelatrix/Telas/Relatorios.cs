@@ -20,8 +20,14 @@ namespace MissBelatrix.Telas
 
         private void btGerarRelatorio_Click(object sender, EventArgs e)
         {
-            Relatorio relatorio = new Relatorio();
-            relatorio.GerarRelatorio(dtpInicio.Value, dtpFim.Value);
+            using (var dialog = new FolderBrowserDialog())
+            {
+                Relatorio relatorio = new Relatorio();
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    relatorio.GerarRelatorio(dtpInicio.Value, dtpFim.Value, dialog.SelectedPath);
+                }
+            }
         }
     }
 }

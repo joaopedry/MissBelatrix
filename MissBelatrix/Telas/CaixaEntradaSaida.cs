@@ -95,6 +95,7 @@ namespace MissBelatrix.Telas
         {
             RegistraEntradaSaida();
             CarregaListaEntradaSaida();
+            CalcularSaldoTotal();
         }
 
         public void CarregaListaEntradaSaida()
@@ -103,7 +104,6 @@ namespace MissBelatrix.Telas
             grvCaixaEntradaSaida.DataSource = bll.ListarFiltrado(BuscaFiltroData());
             grvCaixaEntradaSaida.Update();
             grvCaixaEntradaSaida.Refresh();
-
         }
 
         private DateTime BuscaFiltroData()
@@ -152,7 +152,9 @@ namespace MissBelatrix.Telas
             RegistroBLL bll = new RegistroBLL();
             List<RegistroInfo> info = new List<RegistroInfo>();
             info = bll.Listar();
-            lbSaldo.Text = info.Sum(item => Convert.ToDouble(item.VlValor)).ToString();
+            double saldoEntrada = info.Where(item => item.StTipoOperacao == 0).Sum(item => Convert.ToDouble(item.VlValor));
+            double saldoSaida = info.Where(item => item.StTipoOperacao == 1).Sum(item => Convert.ToDouble(item.VlValor));
+            lbSaldo.Text = (saldoEntrada - saldoSaida).ToString();
         }
 
         private void rbEntrada_CheckedChanged(object sender, EventArgs e)

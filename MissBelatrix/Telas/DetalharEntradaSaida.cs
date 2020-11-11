@@ -26,16 +26,14 @@ namespace MissBelatrix.Telas
             ClienteBLL bllCliente = new ClienteBLL();
             RegistroInfo info = new RegistroInfo();
             info = bllRegistro.Get(pCdRegistro);
-            lbCdRegistro.Text = info.CdRegistro.ToString();
-            lbStTipoOperacao.Text = ((info.StTipoOperacao == 0) ? "Entrada" : "Saída");
-            lbDtRegistro.Text = info.DtRegistro.ToString();
-            lbDtOperacao.Text = info.DtOperacao.ToString();
-            lbCdProduto.Text = info.CdProduto.ToString();
-            lbDsDescricaoProduto.Text = info.DsDescricao.ToString();
-            lbCdCliente.Text = info.CdCliente.ToString();
-            lbDsCliente.Text = bllCliente.Get(info.CdCliente).DsCliente;
-            lbVlQuantidade.Text = info.VlQuantidade.ToString();
-            lbVlValor.Text = info.VlValor.ToString();
+            txtCdRegistro.Text = info.CdRegistro.ToString();
+            txtStTipoOperacao.Text = ((info.StTipoOperacao == 0) ? "Entrada" : "Saída");
+            txtDtRegistro.Text = info.DtRegistro.ToString();
+            txtDtOperacao.Text = info.DtOperacao.ToString();
+            txtDsDescricaoProduto.Text = info.DsDescricao.ToString();
+            txtDsCliente.Text = bllCliente.Get(info.CdCliente).DsCliente;
+            txtVlQuantidade.Text = info.VlQuantidade.ToString();
+            txtVlValor.Text = info.VlValor.ToString();
         }
     }
 }
