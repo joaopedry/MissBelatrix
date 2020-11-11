@@ -16,16 +16,28 @@ namespace MissBelatrix.Camadas.BLL
             return dal.Listar();
         }
 
-        public List<RegistroInfo> ListarFiltrado(DateTime pDtLancamentoFiltro)
+        public RegistroInfo Get(int pCdRegistro)
+        {
+            RegistroDAL dal = new RegistroDAL();
+            return dal.Get(pCdRegistro);
+        }
+
+        public List<RegistroInfo> ListarFiltrado(DateTime pDtInicio, DateTime pDtFim = default(DateTime))
             {
             RegistroDAL dal = new RegistroDAL();
-            return dal.ListarFiltrado(pDtLancamentoFiltro);
+            return dal.ListarFiltrado(pDtInicio, ((pDtFim == DateTime.MinValue) ? DateTime.Now : pDtFim));
         }
 
         public void Inserir(RegistroInfo pInfo)
         {
             RegistroDAL dal = new RegistroDAL();
             dal.Inserir(pInfo);
+        }
+
+        public void Delete(int pCdRegistro)
+        {
+            RegistroDAL dal = new RegistroDAL();
+            dal.Delete(pCdRegistro);
         }
     }
 }

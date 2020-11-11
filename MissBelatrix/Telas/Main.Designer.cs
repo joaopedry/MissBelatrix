@@ -38,7 +38,7 @@
             this.menuCores = new System.Windows.Forms.ToolStripMenuItem();
             this.menuCaixaEntradaSaida = new System.Windows.Forms.ToolStripMenuItem();
             this.entradasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saidasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RelatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuSair = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -71,42 +71,42 @@
             // menuClientes
             // 
             this.menuClientes.Name = "menuClientes";
-            this.menuClientes.Size = new System.Drawing.Size(180, 22);
+            this.menuClientes.Size = new System.Drawing.Size(169, 22);
             this.menuClientes.Text = "Clientes";
             this.menuClientes.Click += new System.EventHandler(this.menuClientes_Click);
             // 
             // menuProdutos
             // 
             this.menuProdutos.Name = "menuProdutos";
-            this.menuProdutos.Size = new System.Drawing.Size(180, 22);
+            this.menuProdutos.Size = new System.Drawing.Size(169, 22);
             this.menuProdutos.Text = "Produtos";
             this.menuProdutos.Click += new System.EventHandler(this.menuProdutos_Click);
             // 
             // menuTipoAcessos
             // 
             this.menuTipoAcessos.Name = "menuTipoAcessos";
-            this.menuTipoAcessos.Size = new System.Drawing.Size(180, 22);
+            this.menuTipoAcessos.Size = new System.Drawing.Size(169, 22);
             this.menuTipoAcessos.Text = "Tipos de Acesso";
             this.menuTipoAcessos.Click += new System.EventHandler(this.menuTipoAcessos_Click);
             // 
             // menuTipoProdutos
             // 
             this.menuTipoProdutos.Name = "menuTipoProdutos";
-            this.menuTipoProdutos.Size = new System.Drawing.Size(180, 22);
+            this.menuTipoProdutos.Size = new System.Drawing.Size(169, 22);
             this.menuTipoProdutos.Text = "Tipos de Produtos";
             this.menuTipoProdutos.Click += new System.EventHandler(this.menuTipoProdutos_Click);
             // 
             // menuTamanhos
             // 
             this.menuTamanhos.Name = "menuTamanhos";
-            this.menuTamanhos.Size = new System.Drawing.Size(180, 22);
+            this.menuTamanhos.Size = new System.Drawing.Size(169, 22);
             this.menuTamanhos.Text = "Tamanhos";
             this.menuTamanhos.Click += new System.EventHandler(this.menuTamanhos_Click);
             // 
             // menuCores
             // 
             this.menuCores.Name = "menuCores";
-            this.menuCores.Size = new System.Drawing.Size(180, 22);
+            this.menuCores.Size = new System.Drawing.Size(169, 22);
             this.menuCores.Text = "Cores";
             this.menuCores.Click += new System.EventHandler(this.menuCores_Click);
             // 
@@ -114,7 +114,7 @@
             // 
             this.menuCaixaEntradaSaida.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.entradasToolStripMenuItem,
-            this.saidasToolStripMenuItem});
+            this.RelatoriosToolStripMenuItem});
             this.menuCaixaEntradaSaida.Name = "menuCaixaEntradaSaida";
             this.menuCaixaEntradaSaida.Size = new System.Drawing.Size(48, 20);
             this.menuCaixaEntradaSaida.Text = "Caixa";
@@ -126,11 +126,12 @@
             this.entradasToolStripMenuItem.Text = "Entradas/Saídas";
             this.entradasToolStripMenuItem.Click += new System.EventHandler(this.entradasToolStripMenuItem_Click);
             // 
-            // saidasToolStripMenuItem
+            // RelatoriosToolStripMenuItem
             // 
-            this.saidasToolStripMenuItem.Name = "saidasToolStripMenuItem";
-            this.saidasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.saidasToolStripMenuItem.Text = "Saidas";
+            this.RelatoriosToolStripMenuItem.Name = "RelatoriosToolStripMenuItem";
+            this.RelatoriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.RelatoriosToolStripMenuItem.Text = "Relatórios";
+            this.RelatoriosToolStripMenuItem.Click += new System.EventHandler(this.RelatoriosToolStripMenuItem_Click);
             // 
             // menuSair
             // 
@@ -163,7 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem menuClientes;
         private System.Windows.Forms.ToolStripMenuItem menuCaixaEntradaSaida;
         private System.Windows.Forms.ToolStripMenuItem entradasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saidasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem RelatoriosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuSair;
         private System.Windows.Forms.ToolStripMenuItem menuTipoProdutos;
         private System.Windows.Forms.ToolStripMenuItem menuCores;

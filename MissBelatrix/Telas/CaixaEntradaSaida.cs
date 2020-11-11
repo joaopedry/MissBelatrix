@@ -22,6 +22,7 @@ namespace MissBelatrix.Telas
             CarregaFiltroLista();
             CarregaListaEntradaSaida();
             HabilitaCamposEntrada();
+            CalcularSaldoTotal();
         }
 
         private void CarregaProdutos()
@@ -146,6 +147,14 @@ namespace MissBelatrix.Telas
             }
         }
 
+        private void CalcularSaldoTotal()
+        {
+            RegistroBLL bll = new RegistroBLL();
+            List<RegistroInfo> info = new List<RegistroInfo>();
+            info = bll.Listar();
+            lbSaldo.Text = info.Sum(item => Convert.ToDouble(item.VlValor)).ToString();
+        }
+
         private void rbEntrada_CheckedChanged(object sender, EventArgs e)
         {
             HabilitaCamposEntrada();
@@ -163,7 +172,8 @@ namespace MissBelatrix.Telas
 
         private void grvCaixaEntradaSaida_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            DetalharEntradaSaida detalharEntradaSaida = new DetalharEntradaSaida(Convert.ToInt32(grvCaixaEntradaSaida.CurrentRow.Cells[0].Value));
+            detalharEntradaSaida.Show();
         }
     }
 }

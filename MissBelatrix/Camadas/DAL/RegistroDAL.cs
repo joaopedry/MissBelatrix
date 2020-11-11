@@ -26,13 +26,26 @@ namespace MissBelatrix.Camadas.DAL
             { throw ex; }
         }
 
-        public List<RegistroInfo> ListarFiltrado(DateTime pDtLancamentoFiltro)
+        public RegistroInfo Get(int pCdRegistro)
         {
             try
             {
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
-                    List<RegistroInfo> info = db.GetCollection<RegistroInfo>().Find(x => x.DtOperacao >= pDtLancamentoFiltro).ToList();
+                    return db.GetCollection<RegistroInfo>().FindById(pCdRegistro);
+                }
+            }
+            catch (Exception ex)
+            { throw ex; }
+        }
+
+        public List<RegistroInfo> ListarFiltrado(DateTime pDtInicio, DateTime pDtFim)
+        {
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
+                {
+                    List<RegistroInfo> info = db.GetCollection<RegistroInfo>().Find(x => x.DtOperacao >= pDtInicio && x.DtOperacao <= pDtFim).ToList();
 
                     return info;
                 }
@@ -48,6 +61,19 @@ namespace MissBelatrix.Camadas.DAL
                 using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
                 {
                     db.GetCollection<RegistroInfo>().Insert(pInfo);
+                }
+            }
+            catch (Exception ex)
+            { throw ex; }
+        }
+
+        public void Delete(int pCdRegistro)
+        {
+            try
+            {
+                using (LiteDatabase db = new LiteDatabase(dataBase.DataBaseConnection()))
+                {
+                    db.GetCollection<RegistroInfo>().Delete(pCdRegistro);
                 }
             }
             catch (Exception ex)

@@ -63,5 +63,11 @@ namespace MissBelatrix.Telas
             CaixaEntradaSaida caixaEntradaSaida = new CaixaEntradaSaida();
             caixaEntradaSaida.Show();
         }
+
+        private void RelatoriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Relatorios relatorios = new Relatorios();
+            relatorios.Show();
+        }
     }
 }
